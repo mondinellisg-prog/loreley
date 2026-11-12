@@ -4,8 +4,8 @@ backend:
   branch: main
 
 # Manejo de multimedia
-media_folder: "assets/productos"
-public_folder: "assets/productos"
+media_folder: "/"
+public_folder: "/"
 
 # Interfaz visual
 locale: "es"
