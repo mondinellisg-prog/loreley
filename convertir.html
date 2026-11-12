@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor CSV a JSON - Loreley</title>
+</head>
+<body style="font-family: sans-serif; padding: 40px; text-align: center;">
+  <h2>Generador de catalogo.json</h2>
+  <p>Hacé clic en el botón para convertir los datos y descargar el archivo listo:</p>
+  <button id="btn" style="padding: 12px 24px; font-size: 16px; background: #b46d65; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    Descargar content/catalogo.json
+  </button>
+
+  <script>
+    // Pegamos la lista completa de productos
+    const csvRaw = `ID,nombre,ml/g,descripcion,precio,categoria,stock,imagen
+501520004,Sérum demaquillante de ojos y labios,70,,29.500,cuidados basicos,con stock,501520004.jpg
+501590004,Sérum demaquillante protector,70,,29.400,cuidados basicos,con stock,501590004.jpg
+545080004,Leche de limpieza con fitoflavonas de soja,100,,19.900,cuidados basicos,con stock,545080004.jpg
+501040004,Gel de limpieza protector,100,,20.200,cuidados basicos,con stock,501040004.jpg
+501500004,Leche de limpieza con regaliz y activos vegetales,100,,20.500,cuidados basicos,con stock,501500004.jpg
+501530004,Crema de limpieza con fitoesteroles de soja y malva,160,,22.900,cuidados basicos,con stock,501530004.jpg
+501510004,Dermopulido gel con extractos frutales,70,,21.400,cuidados basicos,con stock,501510004.jpg
+510590004,Brume Radiant,100,,17.700,cuidados basicos,con stock,510590004.jpg
+544850004,Aire Libre Repelente de Insectos,100,,7.400,cuidados basicos,con stock,544850004.jpg
+505070004,Neodermis Ampollas Elastina (10 unidades),2,,28.700,dermatocosmetica dr. enero,con stock,505070004.jpg
+505030004,Piel Firm Ampollas colágeno (10 unidades),2,,43.600,dermatocosmetica dr. enero,con stock,505030004.jpg
+546010004,Hialurón,20,,32.300,dermatocosmetica dr. enero,con stock,546010004.jpg
+546170004,Sérum con DMAE,20,,31.300,dermatocosmetica dr. enero,con stock,546170004.jpg
+546070004,Colágeno III,20,,28.700,dermatocosmetica dr. enero,con stock,546070004.jpg
+545160004,Monodosis C Dr. Enero (10 unidades),2,,46.900,dermatocosmetica dr. enero,con stock,545160004.jpg
+545190004,Monodosis R Dr. Enero (10 unidades),2,,48.200,dermatocosmetica dr. enero,con stock,545190004.jpg
+545170004,Monodosis D Dr. Enero (10 unidades),2,,41.100,dermatocosmetica dr. enero,con stock,545170004.jpg
+527180003,Loción con agentes sanitizantes de acción prolongada,250,,15.300,dermatocosmetica dr. enero,con stock,527180003.jpg
+546090004,Óleo multivitamínico con rosa mosqueta,20,,36.500,dermatocosmetica dr. enero,con stock,546090004.jpg
+527110004,Gel fortalecedor con biotina,20,,35.000,dermatocosmetica dr. enero,con stock,527110004.jpg
+546190004,Sérum Ionizable con vitamina C,20,,31.000,dermatocosmetica dr. enero,con stock,546190004.jpg
+546210004,Sérum Lifting Tensor,15,,28.900,dermatocosmetica dr. enero,con stock,546210004.jpg
+545350004,Monodosis Hialurón Plus (10 unidades),2,,46.600,dermatocosmetica dr. enero,con stock,545350004.jpg
+545360004,Monodosis Vitamina C Plus (10 unidades),2,,42.000,dermatocosmetica dr. enero,con stock,545360004.jpg
+546230004,Radiant Glow,20,,34.900,dermatocosmetica dr. enero,con stock,546230004.jpg
+546240004,Radiant Filler,20,,34.500,dermatocosmetica dr. enero,con stock,546240004.jpg
+546250004,Vital Booster Hylu-Serum,20,,38.000,dermatocosmetica dr. enero,con stock,546250004.jpg
+546260004,AZ Booster,20,,35.100,dermatocosmetica dr. enero,con stock,546260004.jpg
+546270004,Dr Enero - Serum Calmer,20,,29.700,dermatocosmetica dr. enero,con stock,546270004.jpg
+546280004,Serum Novo Retinol,20,,45.000,dermatocosmetica dr. enero,con stock,546280004.jpg
+546100004,Sérum humectante herbal,70,,32.500,pieles delicadas,con stock,546100004.jpg
+503140004,Emulsión humectante herbal,100,,21.400,pieles delicadas,con stock,503140004.jpg
+503130003,Gel humectante herbal,250,,52.200,pieles delicadas,con stock,503130003.jpg
+503500004,Neblina hidratante con malva y boswelia,100,,24.500,pieles delicadas,con stock,503500004.jpg
+502540004,Rocío protector con oligoelementos,100,,17.300,pieles delicadas,con stock,502540004.jpg
+510510003,Máscara descongestiva con silanotriol y vitamina B3,250,,50.400,pieles delicadas,con stock,510510003.jpg
+503190004,Emulsión Green Balance,70,,37.800,pieles delicadas,con stock,503190004.jpg
+510610004,Brume Calmer,100,,16.800,pieles delicadas,con stock,510610004.jpg
+503180004,Cellular Diamond antiage,60,,47.500,antiage,con stock,503180004.jpg
+503200004,Filler Diamond Antiage,30,,45.300,antiage,con stock,503200004.jpg
+546060004,Microfiller Antiage,15,,49.000,antiage,con stock,546060004.jpg
+546050004,Fresh eyes roll on con cafeína,15,,35.900,antiage,con stock,546050004.jpg
+503160004,Bálsamo dinamizante celular,70,,37.300,antiage,con stock,503160004.jpg
+503150004,Emulsión células madre,70,,54.900,antiage,con stock,503150004.jpg
+503170004,Crema células madre con octapéptidos y argán,70,,49.600,antiage,con stock,503170004.jpg
+525090004,Crema antiage con coenzima Q,70,,34.700,antiage,con stock,525090004.jpg
+543040004,Crema con oxígeno,70,,38.200,antiage,con stock,543040004.jpg
+505210004,Crema liposomada con ácido hilurónico,70,,33.900,antiage,con stock,505210004.jpg
+543060004,Crema retinol con vitamina C,70,,37.500,antiage,con stock,543060004.jpg
+543070004,Crema retinol plus,70,,53.700,antiage,con stock,543070004.jpg
+545020004,Crema antiage alimentar nutrir,70,,31.900,antiage,con stock,545020004.jpg
+545040004,Film crono hidratante,70,,26.600,antiage,con stock,545040004.jpg
+545340004,Biolifting XF,50,,57.100,antiage,con stock,545340004.jpg
+545300004,Complejo antiage con Omega Plus,50,,40.800,antiage,con stock,545300004.jpg
+505500004,Concentrado hidronutriente con tamarindo y trébol rojo,70,,38.600,antiage,con stock,505500004.jpg
+503530004,Crema reparadora con ceramidas y silanoles,160,,45.200,antiage,con stock,503530004.jpg
+505510004,Crema nutritiva con mix antiage de soja,160,,37.800,antiage,con stock,505510004.jpg
+505520004,Crema nutritiva con vitaminas A y E,160,,35.100,antiage,con stock,505520004.jpg
+503570004,Crema hidronutritiva con PCA,160,,36.800,antiage,con stock,503570004.jpg
+510550003,Máscara suavizante con elastina,250,,42.100,antiage,con stock,510550003.jpg
+505200004,Sérum Liposomado,70,,29.600,antiage,con stock,505200004.jpg
+503230004,Diamond Eyes,12,,35.300,antiage,con stock,503230004.jpg
+503240004,Diamond Lips,12,,31.400,antiage,con stock,503240004.jpg
+503250004,Renova Defense,60,,41.900,antiage,con stock,503250004.jpg
+503270004,Crema Nutritiva de Párpados,15,,36.700,antiage,con stock,503270004.jpg
+503260004,Bio Therapy Hylu-Serum,10,,27.900,antiage,con stock,503260004.jpg
+502510004,Loción refrescante con té verde y flavonoides,100,,26.000,hidratacion humectacion tonificacion,con stock,502510004.jpg
+503560004,Loción humectante y tonificante,100,,26.200,hidratacion humectacion tonificacion,con stock,503560004.jpg
+503540004,Emulsión humectante hidra plus,100,,21.200,hidratacion humectacion tonificacion,con stock,503540004.jpg
+545090004,Bruma equilibrante,100,,24.200,hidratacion humectacion tonificacion,con stock,545090004.jpg
+503580004,Sérum facial con ramnosa,70,,24.600,hidratacion humectacion tonificacion,con stock,503580004.jpg
+543030004,Hidrogel con uniesferas de vitamina C y E,70,,28.600,hidratacion humectacion tonificacion,con stock,543030004.jpg
+503520004,Concentrado hidroenergizante ACI,70,,37.300,hidratacion humectacion tonificacion,con stock,503520004.jpg
+503070004,Crema humectante con aceite de palta,160,,34.200,hidratacion humectacion tonificacion,con stock,503070004.jpg
+545270004,Crema color con ácido hialurónico,70,,24.700,hidratacion humectacion tonificacion,con stock,545270004.jpg
+513080004,Crema humectante con aloe vera,140,,15.200,hidratacion humectacion tonificacion,con stock,513080004.jpg
+513100004,Máscara Radiant Filler,50,,46.000,hidratacion humectacion tonificacion,con stock,513100004.jpg
+506510004,Lápiz secativo color,3.5,,22.600,pieles grasas,con stock,506510004.jpg
+506520004,Lápiz secativo con tea tree oil,3.5,,22.600,pieles grasas,con stock,506520004.jpg
+506530004,Lapiz secativo incoloro,3.5,,22.600,pieles grasas,con stock,506530004.jpg
+506070004,Crema Control sebo,70,,29.900,pieles grasas,con stock,506070004.jpg
+506110004,Perfect Pore,70,,25.200,pieles grasas,con stock,506110004.jpg
+506140004,Acné III,70,,29.800,pieles grasas,con stock,506140004.jpg
+506120004,Emulsión Aqua Pore,100,,24.700,pieles grasas,con stock,506120004.jpg
+506500004,Loción secante,70,,22.700,pieles grasas,con stock,506500004.jpg
+545240004,Loción astringente,100,,20.100,pieles grasas,con stock,545240004.jpg
+502500004,Loción astringente con nicotinamida,100,,22.700,pieles grasas,con stock,502500004.jpg
+515540004,Shampoo sebonormalizante con Tea Tree Oil,250,,21.700,pieles grasas,con stock,515540004.jpg
+506150004,Loción Perfect Pore con ácido salicílico,100,,23.200,pieles grasas,con stock,506150004.jpg
+527050004,Crema deportiva y restauradora de pies,160,,29.700,manos y pies,con stock,527050004.jpg
+527080004,Crema para manos con acido hialuronico,70,,13.900,manos y pies,con stock,527080004.jpg
+527210004,Crema hidratante perfumada F3,70,,22.900,manos y pies,con stock,527210004.jpg
+527170004,Crema antiage para manos con vitaminas,70,,21.600,manos y pies,con stock,527170004.jpg
+530020004,Balsamo after shave,60,,32.300,cuidados masculinos,con stock,530020004.jpg
+530030004,Emulsion energia vital,70,,34.200,cuidados masculinos,con stock,530030004.jpg
+530050004,Serum reparador antiage,15,,37.000,cuidados masculinos,con stock,530050004.jpg
+515560004,Shampoo para la caida,200,,21.300,cuidados capilares,con stock,515560004.jpg
+515660004,Shampoo Biocauterizante,200,,19.700,cuidados capilares,con stock,515660004.jpg
+515600004,Ampollas control caida (5 unidades),10,,23.700,cuidados capilares,con stock,515600004.jpg
+515680004,Bioactivador capilar con Redensyl,100,,36.600,cuidados capilares,con stock,515680004.jpg
+515500004,Shampoo Antiage,200,,17.400,cuidados capilares,con stock,515500004.jpg
+515540004,Shampoo sebonormalizante con Tea Tree Oil,200,,21.700,cuidados capilares,con stock,515540004.jpg
+503590004,Agua Facial,100,,11.200,laca beauty,con stock,503590004.jpg
+503600004,Mousse de Dia,45,,20.500,laca beauty,con stock,503600004.jpg
+505530004,Serum Cremoso,45,,21.000,laca beauty,con stock,505530004.jpg
+501610004,Crema Light,45,,14.300,laca beauty,con stock,501610004.jpg
+511910004,Leche Corporal,200,,16.300,laca beauty,con stock,511910004.jpg
+511580003,Shower gel,250,,26.300,corporales,con stock,511580003.jpg
+511620004,Bruma integral con cafeina y arnica,100,,18.200,corporales,con stock,511620004.jpg
+511610003,Leche corporal con vitamina A,250,,33.200,corporales,con stock,511610003.jpg
+511640003,Gel modelador intensivo,250,,32.500,corporales,con stock,511640003.jpg
+511790003,Solucion corporal con DMAE,235,,23.700,corporales,con stock,511790003.jpg
+511940003,Emulsion Corporal Multitratamiento,250,,33.200,corporales,con stock,511940003.jpg
+546200004,Concentrado Corporal Ionizable con Poppy,70,,10.800,corporales,con stock,546200004.jpg
+512000003,Vital Body Emulsion,250,,39.000,corporales,con stock,512000003.jpg
+511190004,Oleo Corporal Dual,100,,12.000,corporales,con stock,511190004.jpg
+512080003,Crema Celulitis III,250,,44.800,corporales,con stock,512080003.jpg
+540020004,Gel con AHAs,70,,32.600,renovacion celular,con stock,540020004.jpg
+540040004,Crema Glico 20,70,,34.200,renovacion celular,con stock,540040004.jpg
+545210004,Dermoaclarante,12,,29.400,renovacion celular,con stock,545210004.jpg
+540010004,Crema renovadora con acido salicilico,70,,34.800,renovacion celular,con stock,540010004.jpg
+540110004,Gel plus con acido mandelico y uva ursi,70,,32.600,renovacion celular,con stock,540110004.jpg
+540130004,Gel con Acido Lactobionico,20,,34.400,renovacion celular,con stock,540130004.jpg
+540140004,Gel con Acido Tranexamico y Pantenol,70,,33.000,renovacion celular,con stock,540140004.jpg
+540160004,Serum Acido Mandelico,20,,24.900,renovacion celular,con stock,540160004.jpg
+540150004,Serum Acido Salicilico,20,,25.000,renovacion celular,con stock,540150004.jpg
+501600004,My Cleaner Gel Exfoliante,140,,22.100,teens,con stock,501600004.jpg
+511860003,Stop Estrias Emulgel,250,,28.700,teens,con stock,511860003.jpg
+506130004,Locion Matificante,100,,19.000,teens,con stock,506130004.jpg
+17060004,F1,55,,29.000,fragancias,con stock,17060004.jpg
+17070004,F2,55,,32.800,fragancias,con stock,17070004.jpg
+17090004,F3,55,,36.000,fragancias,con stock,17090004.jpg
+17080004,M1,55,,33.700,fragancias,con stock,17080004.jpg
+17110004,M2,55,,39.600,fragancias,con stock,17110004.jpg
+511870003,Emulsion Hidratante Enigmatica,240,,20.200,sensorial,con stock,511870003.jpg
+511880003,Emulsion Hidratante Ilusion,240,,20.200,sensorial,con stock,511880003.jpg
+511890003,Emulsion Hidratante Fresca,240,,20.200,sensorial,con stock,511890003.jpg
+511900003,Emulsion Hidratante Salvaje,240,,20.200,sensorial,con stock,511900003.jpg
+503610004,Body Splash - Flor de Tiare,125,,16.000,sensorial,con stock,503610004.jpg
+503620004,Body Splash - Azucar de Coco,125,,16.000,sensorial,con stock,503620004.jpg
+503630004,Body Splash - Vainilla de Tahiti,125,,16.000,sensorial,con stock,503630004.jpg
+518171704,Lacatint Multifuncion Sensorial - Albaricoque,7,,27.600,sensorial,con stock,518171704.jpg
+518171804,Lacatint Multifuncion Sensorial - Cocolight,7,,27.600,sensorial,con stock,518171804.jpg
+518337004,Brillo Voluminizador Labial Coconut,10,,24.500,sensorial,con stock,518337004.jpg
+18992904,Iluminador Compacto Cocolight,8,,17.800,sensorial,con stock,18992904.jpg
+518295304,Luminizer Coconut,7,,28.000,sensorial,con stock,518295304.jpg
+511950004,Aceite Esencial - Eucalipto,10,,26.800,sensorial,con stock,511950004.jpg
+511960004,Aceite Esencial - Tea Tree,10,,28.300,sensorial,con stock,511960004.jpg
+511970004,Aceite Esencial - Lavanda,10,,26.700,sensorial,con stock,511970004.jpg
+511980004,Aceite Esencial - Romero,10,,26.000,sensorial,con stock,511980004.jpg
+511990004,Aceite Esencial - Sumun 31,10,,21.500,sensorial,con stock,511990004.jpg
+513330004,Balsamo protector de labios,3,,16.000,proteccion solar,con stock,513330004.jpg
+513340004,Balsamo protector de labios Cherry,3,,16.000,proteccion solar,con stock,513340004.jpg
+513210004,Emulsion protectora FPS 21,130,,34.700,proteccion solar,con stock,513210004.jpg
+513220004,Emulsion protectora FPS 34,130,,42.100,proteccion solar,con stock,513220004.jpg
+513280004,Emulsion protectora FPS 60 con color,70,,38.900,proteccion solar,con stock,513280004.jpg
+513050004,Crema humectante y protectora,140,,28.000,proteccion solar,con stock,513050004.jpg
+513290004,Filtro solar invisible FPS 30,145,,33.300,proteccion solar,con stock,513290004.jpg
+513300004,Filtro solar invisible FPS 50,145,,38.800,proteccion solar,con stock,513300004.jpg
+513320004,Spray post solar,145,,23.500,proteccion solar,con stock,513320004.jpg
+513350004,Ultra Fluido FPS 60,60,,50.800,proteccion solar,con stock,513350004.jpg
+513360004,Autobronceante Activador,140,,32.400,proteccion solar,con stock,513360004.jpg
+518320704,Espuma Micelar Descongestiva,150,,35.200,preparacion piel,con stock,518320704.jpg
+518320604,Instant Cleaner Agua Micelar,185,,25.800,preparacion piel,con stock,518320604.jpg
+518275904,Prebase Primer Perfeccionador Matificante,60,,30.700,preparacion piel,con stock,518275904.jpg
+518275604,Prebase Perfeccionador Dual HD,60,,32.400,preparacion piel,con stock,518275604.jpg
+518275704,Prebase Serum Antiage,60,,27.400,preparacion piel,con stock,518275704.jpg
+518276004,Prebase primer Luminous Lift,60,,30.800,preparacion piel,con stock,518276004.jpg
+518117804,Vital Color - Dream Primer BB Cream,30,,26.500,preparacion piel,con stock,518117804.jpg
+518145104,Base antiage DD cream - 51 Claro,30,,24.700,preparacion piel,con stock,518145104.jpg
+518145204,Base antiage DD cream - 52 Medio,30,,24.700,preparacion piel,con stock,518145204.jpg
+518145304,Base antiage DD cream - 53 Bronceado,30,,24.700,preparacion piel,con stock,518145304.jpg
+518115104,Base mousse complex - 51 Claro,30,,31.500,preparacion piel,con stock,518115104.jpg
+518115204,Base mousse complex - 52 Medio,30,,31.500,preparacion piel,con stock,518115204.jpg
+518115304,Base mousse complex - 53 Bronceado,30,,31.500,preparacion piel,con stock,518115304.jpg
+518105104,Base Matte magic - 51 Claro - Medio,30,,29.700,preparacion piel,con stock,518105104.jpg
+518105204,Base Matte magic - 52 Soleil,30,,29.700,preparacion piel,con stock,518105204.jpg
+518105304,Base Matte magic - 53 Bronceado,30,,29.700,preparacion piel,con stock,518105304.jpg
+518111004,Base Glow BB Cream,30,,25.500,preparacion piel,con stock,518111004.jpg
+518116504,Base Radiant Skin - 01 Claro,30,,22.100,preparacion piel,con stock,518116504.jpg
+518116604,Base Radiant Skin - 02 Medio,30,,22.100,preparacion piel,con stock,518116604.jpg
+518116704,Base Radiant Skin - 03 Bronceado,30,,17.700,preparacion piel,con stock,518116704.jpg
+518116804,Base Smooth Skin - 01 Claro,30,,29.600,preparacion piel,con stock,518116804.jpg
+518116904,Base Smooth Skin - 02 Medio,30,,29.600,preparacion piel,con stock,518116904.jpg
+518117004,Base Smooth Skin - 03 Bronceado,30,,23.600,preparacion piel,con stock,518117004.jpg
+518117504,Base Photo Finish - 01 Claro,30,,30.800,preparacion piel,con stock,518117504.jpg
+518117604,Base Photo Finish - 02 Medio,30,,30.800,preparacion piel,con stock,518117604.jpg
+518117704,Base Photo Finish - 03 Bronceado,30,,30.800,preparacion piel,con stock,518117704.jpg
+518195204,Polvo Volatil Silky Loose Powder HD - 52 Incoloro,9,,31.300,preparacion piel,con stock,518195204.jpg
+518195304,Polvo Volatil Silky Loose Powder HD - 53 Natural,9,,31.300,preparacion piel,con stock,518195304.jpg
+518110804,Polvo compacto Mix Silky HD - Claro,8.5,,32.700,preparacion piel,con stock,518110804.jpg
+518110904,Polvo compacto Mix Silky HD - Medio,8.5,,32.700,preparacion piel,con stock,518110904.jpg
+518111404,Polvo matificante Matting Silk HD,8.5,,28.200,preparacion piel,con stock,518111404.jpg
+518320204,Neblina fijadora,100,,23.700,preparacion piel,con stock,518320204.jpg
+518320404,Neblina fijadora mix relax,100,,24.800,preparacion piel,con stock,518320404.jpg
+518320804,Vital Color - Neblina fijadora,100,,23.700,preparacion piel,con stock,518320804.jpg
+518320304,Diluyente y fijador HD,10,,13.900,preparacion piel,con stock,518320304.jpg
+518081104,Stick concealer AH - 11 Claro,4.7,,22.200,correctores iluminadores rubores,con stock,518081104.jpg
+518081204,Stick concealer AH - 12 Medio,4.7,,22.200,correctores iluminadores rubores,con stock,518081204.jpg
+518080404,Corrector light touch - 04 Claro,7,,25.200,correctores iluminadores rubores,con stock,518080404.jpg
+518080504,Corrector light touch - 05 Medio,7,,25.200,correctores iluminadores rubores,con stock,518080504.jpg
+518230104,Corrector trio,12,,21.500,correctores iluminadores rubores,con stock,518230104.jpg
+518082004,Corrector iluminador BB cream - 20 Claro,7,,27.600,correctores iluminadores rubores,con stock,518082004.jpg
+518082104,Corrector iluminador BB cream - 21 Medio,7,,27.600,correctores iluminadores rubores,con stock,518082104.jpg
+518350304,Perfect Finish Concealer - Corrector individual - 03 Salmon,3,,18.100,correctores iluminadores rubores,con stock,518350304.jpg
+518350404,Perfect Finish Concealer - Corrector individual - 04 Claro,3,,18.100,correctores iluminadores rubores,con stock,518350404.jpg
+518350504,Perfect Finish Concealer - Corrector individual - 05 Medio,3,,18.100,correctores iluminadores rubores,con stock,518350504.jpg
+518350604,Perfect Finish Concealer - Corrector individual - 06 Amarillo,3,,18.100,correctores iluminadores rubores,con stock,518350604.jpg
+518350704,Perfect Finish Concealer - Corrector individual - 07 Naranja,3,,18.100,correctores iluminadores rubores,con stock,518350704.jpg
+518350804,Perfect Finish Concealer - Corrector individual - 08 Verde,3,,18.100,correctores iluminadores rubores,con stock,518350804.jpg
+518295104,Mousse tonalizadora,60,,26.300,correctores iluminadores rubores,con stock,518295104.jpg
+518110304,Iluminador Tonalizador mix,10,,39.500,correctores iluminadores rubores,con stock,518110304.jpg
+518111804,Contour Maquillaje en Barra,5,,21.400,correctores iluminadores rubores,con stock,518111804.jpg
+518111904,Iluminador Maquillaje en Barra,5,,21.400,correctores iluminadores rubores,con stock,518111904.jpg
+518112404,Light y Blush Iluminador y Rubor - Art,10,,36.900,correctores iluminadores rubores,con stock,518112404.jpg
+518112504,Light y Blush Iluminador y Rubor - Finish Satin Bronceado,10,,36.900,correctores iluminadores rubores,con stock,518112504.jpg
+518112604,Light y Blush Iluminador y Rubor - Finish Satin Salmon,10,,36.900,correctores iluminadores rubores,con stock,518112604.jpg
+518112704,Light y Blush Iluminador y Rubor - Finish Satin Sunset,10,,36.900,correctores iluminadores rubores,con stock,518112704.jpg
+518112204,Light y Blush Iluminador y Rubor - Red Wood,10,,36.900,correctores iluminadores rubores,con stock,518112204.jpg
+518295204,Luminizer Iluminador Facial y Corporal,60,,28.400,correctores iluminadores rubores,con stock,518295204.jpg
+518981504,Seda color - 05 Beige,12,,25.500,correctores iluminadores rubores,con stock,518981504.jpg
+518981904,Seda color - 09 Red Wood,12,,25.500,correctores iluminadores rubores,con stock,518981904.jpg
+518982304,Seda color - 23 Plum,12,,25.500,correctores iluminadores rubores,con stock,518982304.jpg
+518982604,Seda color - 26 Luxury,12,,25.500,correctores iluminadores rubores,con stock,518982604.jpg
+518982904,Seda color - 29 Dewy,12,,25.500,correctores iluminadores rubores,con stock,518982904.jpg
+518983004,Vital Color - Seda Color Blush Balm,12,,25.500,correctores iluminadores rubores,con stock,518983004.jpg
+18250104,Delineador retractil para ojos - Negro,0.28,,23.200,delineadores,con stock,18250104.jpg
+18254004,Long Wear Eyes Crayon,1.2,,20.700,delineadores,con stock,18254004.jpg
+18160104,Fibra delineadora - Ultrablack,3.5,,18.600,delineadores,con stock,18160104.jpg
+518160304,Delineador liquido waterproof,5,,30.000,delineadores,con stock,518160304.jpg
+518165004,Delineador en gel compacto - 50 Negro,3,,19.300,delineadores,con stock,518165004.jpg
+518165504,Delineador en gel compacto - 55 Tabaco,3,,19.300,delineadores,con stock,518165504.jpg
+518045904,Trio Sombras para cejas - 459,5,,28.100,delineadores,con stock,518045904.jpg
+518046004,Delineador Compacto trio - 460,5,,25.900,delineadores,con stock,518046004.jpg
+518286504,Volume Push Up Style Lash - Arqueador de Pestanas,10,,27.500,pestanas y cejas,con stock,518286504.jpg
+518286604,Fortificador Activo Style Lash - Gel cejas y pestanas,10,,22.500,pestanas y cejas,con stock,518286604.jpg
+518287304,Fortificador Activo Style Lash color - Gel cejas y pestanas,10,,18.000,pestanas y cejas,con stock,518287304.jpg
+518286704,Care y Long Style Lash - Mascara de pestanas WP,10,,23.100,pestanas y cejas,con stock,518286704.jpg
+518286804,Volume Push Up Style Lash - Mascara WP - 63 Negro,10,,22.500,pestanas y cejas,con stock,518286804.jpg
+518286904,Volume Push Up Style Lash - Mascara WP - 64 Marron,10,,22.500,pestanas y cejas,con stock,518286904.jpg
+518287004,Volume Push Up New Style - Mascara WP - Royal Blue,10,,22.500,pestanas y cejas,con stock,518287004.jpg
+518287104,Extra Fijador de Cejas,5,,16.500,pestanas y cejas,con stock,518287104.jpg
+518287204,Extra Fijador de Cejas con color,5,,13.200,pestanas y cejas,con stock,518287204.jpg
+518287404,Booster Pre Tratamiento para cejas y Pestanas,5,,14.200,pestanas y cejas,con stock,518287404.jpg
+518100104,Sombra Individual - Eye Shadows - 01 Blanco,2,,14.900,sombras,con stock,518100104.jpg
+518100204,Sombra Individual - Eye Shadows - 02 Negro,2,,14.900,sombras,con stock,518100204.jpg
+518051304,Sombra quinteto - No 513 Art,4.5,,35.600,sombras,con stock,518051304.jpg
+518051404,Sombra quinteto - No 514 Galactic,4.5,,35.600,sombras,con stock,518051404.jpg
+518051504,Sombra quinteto - No 515 Sunset,4.5,,35.600,sombras,con stock,518051504.jpg
+518045104,Sombra Trio - 451,5,,28.100,sombras,con stock,518045104.jpg
+518045304,Sombra Trio - 453,5,,28.100,sombras,con stock,518045304.jpg
+518045404,Sombra Trio - 454,5,,28.100,sombras,con stock,518045404.jpg
+518045504,Sombra Trio - 455,5,,28.100,sombras,con stock,518045504.jpg
+518045604,Sombra Trio - 456,5,,28.100,sombras,con stock,518045604.jpg
+518045704,Sombra Trio - 457,5,,28.100,sombras,con stock,518045704.jpg
+518045804,Sombra Trio - 458,5,,28.100,sombras,con stock,518045804.jpg
+518048004,Sombra Cuarteto - 480 MAJA,6,,46.200,sombras,con stock,518048004.jpg
+518048104,Sombra Cuarteto - 481 ENDORPHIN,6,,46.200,sombras,con stock,518048104.jpg
+518106004,Sombra liquida y delineador - Natural,2.6,,18.400,sombras,con stock,518106004.jpg
+518106104,Sombra liquida y delineador - Nubia,2.6,,18.400,sombras,con stock,518106104.jpg
+518106204,Sombra liquida y delineador - Sweet girl,2.6,,18.400,sombras,con stock,518106204.jpg
+518181504,Pigmento Puro Perlas - 15 Gold,1.2,,23.000,sombras,con stock,518181504.jpg
+518181604,Pigmento Puro Perlas - 16 Silver,1.2,,23.000,sombras,con stock,518181604.jpg
+518219904,Lapiz pulidor,4.2,,23.600,labios,con stock,518219904.jpg
+518300104,Sellador para labios indeleble,13,,17.100,labios,con stock,518300104.jpg
+18253004,Lip Crayon Long Wear,1.2,,20.000,labios,con stock,18253004.jpg
+518215604,Lapiz labial - 56 Naranja Luminoso,4.4,,30.800,labios,con stock,518215604.jpg
+518226704,Lapiz labial - 267 Magic Nude,4.4,,30.800,labios,con stock,518226704.jpg
+518226804,Lapiz labial - 268 Azalea,4.4,,30.800,labios,con stock,518226804.jpg
+518227404,Lapiz labial - 274 Candy,4.4,,30.800,labios,con stock,518227404.jpg
+518227504,Lapiz labial - 275 Elegance,4.4,,30.800,labios,con stock,518227504.jpg
+518227004,Lapiz labial - 270 My Lips,4.4,,30.800,labios,con stock,518227004.jpg
+518228304,Lapiz labial - 283 Pearl Wine,4.4,,30.800,labios,con stock,518228304.jpg
+518228404,Lapiz labial - 284 Rojo Paris,4.4,,30.800,labios,con stock,518228404.jpg
+518228504,Lapiz labial - 285 Terracota,4.4,,30.800,labios,con stock,518228504.jpg
+518229004,Lapiz labial - 290 Red Carpet,4.4,,33.800,labios,con stock,518229004.jpg
+518229104,Lapiz labial - 291 Burgundy,4.4,,33.800,labios,con stock,518229104.jpg
+518229204,Lapiz labial - 292 Flare,4.4,,33.800,labios,con stock,518229204.jpg
+518229304,Lapiz labial - 293 Pink Berry,4.4,,33.800,labios,con stock,518229304.jpg
+518229404,Lapiz labial - 294 Glam Nude,4.4,,33.800,labios,con stock,518229404.jpg
+518229504,Lapiz labial - 295 Latin Nude,4.4,,33.800,labios,con stock,518229504.jpg
+518229604,Lapiz labial - 296 Peach Nude,4.4,,33.800,labios,con stock,518229604.jpg
+518229704,Lapiz labial - 297 Natural Nude,4.4,,33.800,labios,con stock,518229704.jpg
+518210304,Lapiz labial Hydra Pulp - 03 Rosa,4.4,,29.600,labios,con stock,518210304.jpg
+518210504,Lapiz labial Hydra Pulp - 05 Damasco,4.4,,29.600,labios,con stock,518210504.jpg
+518219704,Lapiz labial Hydra Pulp - 97 Incoloro,4.4,,29.600,labios,con stock,518219704.jpg
+518223104,Lapiz labial Hydra Pulp - 231 Ambar,4.4,,29.600,labios,con stock,518223104.jpg
+518227704,Labial Balsamo Vegano - 277 Passion,3.8,,27.300,labios,con stock,518227704.jpg
+518227804,Labial Balsamo Vegano - 278 Caribe,3.8,,27.300,labios,con stock,518227804.jpg
+518228004,Labial Balsamo Vegano - 280 Terra,3.8,,27.300,labios,con stock,518228004.jpg
+518228104,Labial Balsamo Vegano - 281 Chic,3.8,,27.300,labios,con stock,518228104.jpg
+518228204,Labial Balsamo Vegano - 282 Charming,3.8,,27.300,labios,con stock,518228204.jpg
+518228604,Labial Balsamo Vegano - 286 Apricot,3.8,,27.300,labios,con stock,518228604.jpg
+518228704,Labial Balsamo Vegano - 287 Berries,3.8,,27.300,labios,con stock,518228704.jpg
+518228804,Labial Balsamo Vegano - 288 Strawberry,3.8,,21.900,labios,con stock,518228804.jpg
+518228904,Labial Balsamo Vegano - 289 Watermelon,3.8,,27.300,labios,con stock,518228904.jpg
+518226604,Labial Mate Confortable - 266 Rouge,4.2,,23.600,labios,con stock,518226604.jpg
+518227104,Labial Mate Confortable - 271 Velvet Lip,4.2,,23.600,labios,con stock,518227104.jpg
+518227204,Labial Mate Confortable - 272 Borgona,4.2,,23.600,labios,con stock,518227204.jpg
+518336704,Glow Deep con Lumiglow,2.6,,31.800,labios,con stock,518336704.jpg
+518177104,Lip Matte - 71 Best Red,2.6,,21.300,labios,con stock,518177104.jpg
+518177204,Lip Matte - 72 Latin Brown,2.6,,21.300,labios,con stock,518177204.jpg
+518177304,Lip Matte - 73 Nude Deep,2.6,,21.300,labios,con stock,518177304.jpg
+518177404,Lip Matte - 74 Love It,2.6,,21.300,labios,con stock,518177404.jpg
+518177504,Lip Matte - 75 Love Pink,2.6,,21.300,labios,con stock,518177504.jpg
+518177604,Lip Matte - 76 Wine,2.6,,21.300,labios,con stock,518177604.jpg
+518172404,Juicy Lasting Lacatint - Tasty Pink,2.6,,38.600,labios,con stock,518172404.jpg
+518172404,Juicy Lasting Lacatint - Cherry,2.6,,38.600,labios,con stock,518172404_cherry.jpg
+518336804,Gloss Labial - 68 Luscious,2.6,,25.800,labios,con stock,518336804.jpg
+518336904,Gloss Labial - 69 Bright Beige,2.6,,25.800,labios,con stock,518336904.jpg
+518172004,Lacatint Multifuncion - 20 Very Peri,2.6,,27.600,labios,con stock,518172004.jpg
+518172104,Lacatint Multifuncion - 21 Very Pink,2.6,,27.600,labios,con stock,518172104.jpg
+518172204,Lacatint Multifuncion - 22 Sweet Plum,2.6,,27.600,labios,con stock,518172204.jpg
+518172304,Lacatint Multifuncion - 23 Sweet Chocolat,2.6,,27.600,labios,con stock,518172304.jpg
+518337104,Vital Color - Brillo Labial Voluminizado,10,,23.000,labios,con stock,518337104.jpg
+518337204,Brillo Labial Voluminizado - Endorphin,10,,23.000,labios,con stock,518337204.jpg
+518337304,Brillo Labial Voluminizado - Euphoria,10,,23.000,labios,con stock,518337304.jpg
+18135204,Esmalte French + Calcio Vitaminado - 52 Blanco,15,,15.800,unas,con stock,18135204.jpg
+18135304,Esmalte French + Calcio Vitaminado - 53 Rosa,15,,15.800,unas,con stock,18135304.jpg
+18135004,Esmalte Blanco puntas - 50 Blanco,15,,15.800,unas,con stock,18135004.jpg
+18135904,Top Coat - 59 Fast Dry,15,,13.900,unas,con stock,18135904.jpg
+18134904,Esmalte 7 en 1,15,,19.500,unas,con stock,18134904.jpg
+18139204,Esmalte - 92 Glitter Holografico,15,,16.300,unas,con stock,18139204.jpg
+18137004,Esmalte efecto gel - 70 Brillo Gel,15,,16.300,unas,con stock,18137004.jpg
+18137204,Esmalte efecto gel - 72 Negro,15,,16.300,unas,con stock,18137204.jpg
+18137304,Esmalte efecto gel - 73 Rojo,15,,16.300,unas,con stock,18137304.jpg
+18128504,Esmalte efecto gel - 85 Dry Green,15,,16.300,unas,con stock,18128504.jpg
+18128604,Esmalte efecto gel - 86 Magic Night,15,,16.300,unas,con stock,18128604.jpg
+18127904,Esmalte efecto gel - 79 Moca,15,,16.300,unas,con stock,18127904.jpg
+18128004,Esmalte efecto gel - 80 Fucsia,15,,16.300,unas,con stock,18128004.jpg
+18128104,Esmalte efecto gel - 81 Hot,15,,16.300,unas,con stock,18128104.jpg
+18128204,Esmalte efecto gel - 82 Lima,15,,16.300,unas,con stock,18128204.jpg
+18127504,Esmalte efecto gel - 75 Violeta,15,,16.300,unas,con stock,18127504.jpg
+18127604,Esmalte efecto gel - 76 Stone,15,,16.300,unas,con stock,18127604.jpg
+18127704,Esmalte efecto gel - 77 Venus,15,,16.300,unas,con stock,18127704.jpg
+18127804,Esmalte efecto gel - 78 Perla,15,,16.300,unas,con stock,18127804.jpg
+18126604,Esmalte efecto gel - 66 Sun,15,,16.300,unas,con stock,18126604.jpg
+18126704,Esmalte efecto gel - 67 Sky,15,,16.300,unas,con stock,18126704.jpg
+18126804,Esmalte efecto gel - 68 Mango,15,,16.300,unas,con stock,18126804.jpg
+18126904,Esmalte efecto gel - 69 Sunset,15,,16.300,unas,con stock,18126904.jpg
+18126204,Esmalte efecto gel - 62 Royal Blue,15,,13.000,unas,con stock,18126204.jpg
+18126304,Esmalte efecto gel - 63 Burgundy,15,,16.300,unas,con stock,18126304.jpg
+18126404,Esmalte efecto gel - 64 Loving Rose,15,,16.300,unas,con stock,18126404.jpg
+18126504,Esmalte efecto gel - 65 Blanco Nacar,15,,16.300,unas,con stock,18126504.jpg
+18125804,Esmalte efecto gel - 58 Glam,15,,22.700,unas,con stock,18125804.jpg
+18125904,Esmalte efecto gel - 59 Latine,15,,22.700,unas,con stock,18125904.jpg
+18126004,Esmalte efecto gel - 60 Peach,15,,22.700,unas,con stock,18126004.jpg
+18126104,Esmalte efecto gel - 61 Off White,15,,22.700,unas,con stock,18126104.jpg
+18135404,Base de porcelana niveladora,15,,15.200,unas,con stock,18135404.jpg
+18136204,Endurecedor Diamante,15,,19.500,unas,con stock,18136204.jpg
+18136004,Aceite de tratamiento para cuticulas,15,,12.700,unas,con stock,18136004.jpg
+18135804,Acelerador de secado,15,,15.200,unas,con stock,18135804.jpg
+18135704,Removedor de cuticulas,15,,11.500,unas,con stock,18135704.jpg
+18139804,Quitaesmalte,100,,5.000,unas,con stock,18139804.jpg
+18139904,Diluyente,60,,3.800,unas,con stock,18139904.jpg
+512060004,Relax - Orquidea Amber - Roll on,10,,14.900,aceites esenciales,con stock,512060004.jpg
+512070004,Energy - Menta Limon y Jengibre - Roll on,10,,14.900,aceites esenciales,con stock,512070004.jpg`;
+
+    function normalizarPrecio(p) {
+      if (!p) return 0;
+      return parseInt(p.toString().replace(/[^0-9]/g, ''), 10) || 0;
+    }
+
+    document.getElementById('btn').addEventListener('click', () => {
+      const lines = csvRaw.trim().split(/\r?\n/).slice(1);
+      const productos = [];
+
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        const cols = line.split(',');
+        const id = (cols[0] || '').trim();
+        const nombre = (cols[1] || '').trim();
+        const medida = (cols[2] || '').trim();
+        const descripcion = (cols[3] || '').trim();
+        const precio = normalizarPrecio(cols[4]);
+        const categoria = (cols[5] || '').trim().toLowerCase();
+        const stock = (cols[6] || '').trim().toLowerCase() === 'sin stock' ? 'sin stock' : 'con stock';
+        const img = (cols[7] || `${id}.jpg`).trim();
+
+        if (id && nombre) {
+          productos.push({
+            id,
+            nombre,
+            medida: medida ? `${medida} ml/g` : '',
+            descripcion,
+            precio,
+            categoria,
+            stock,
+            imagen: `assets/productos/${img}`
+          });
+        }
+      }
+
+      // Descarga automática del archivo catalogo.json
+      const blob = new Blob([JSON.stringify({ productos }, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'catalogo.json';
+      a.click();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+backend:
+  name: github
+  repo: tu-usuario/loreley
+  branch: main
+
+# Manejo de multimedia
+media_folder: "assets/productos"
+public_folder: "assets/productos"
+
+# Interfaz visual
+locale: "es"
+display_url: "https://loreleycosmeticos.pages.dev"
+logo_url: "https://loreleycosmeticos.pages.dev/assets/logo.png"
+
+collections:
+  - name: "catalogo_general"
+    label: "Catálogo de Productos"
+    files:
+      - name: "catalogo"
+        label: "Inventario Loreley"
+        file: "content/catalogo.json"
+        fields:
+          - label: "Productos"
+            name: "productos"
+            widget: "list"
+            summary: "{{fields.nombre}} — ${{fields.precio}} [{{fields.stock}}] ({{fields.categoria}})"
+            fields:
+              - { label: "Código / ID", name: "id", widget: "string" }
+              - { label: "Nombre del Producto", name: "nombre", widget: "string" }
+              - label: "Categoría"
+                name: "categoria"
+                widget: "select"
+                options:
+                  - { label: "Cuidados Básicos", value: "cuidados basicos" }
+                  - { label: "Dermatocosmética Dr. Enero", value: "dermatocosmetica dr. enero" }
+                  - { label: "Pieles Delicadas", value: "pieles delicadas" }
+                  - { label: "Antiage", value: "antiage" }
+                  - { label: "Hidratación, Humectación y Tonificación", value: "hidratacion humectacion tonificacion" }
+                  - { label: "Pieles Grasas", value: "pieles grasas" }
+                  - { label: "Manos y Pies", value: "manos y pies" }
+                  - { label: "Cuidados Masculinos", value: "cuidados masculinos" }
+                  - { label: "Cuidados Capilares", value: "cuidados capilares" }
+                  - { label: "Laca Beauty", value: "laca beauty" }
+                  - { label: "Corporales", value: "corporales" }
+                  - { label: "Renovación Celular", value: "renovacion celular" }
+                  - { label: "Teens", value: "teens" }
+                  - { label: "Fragancias", value: "fragancias" }
+                  - { label: "Sensorial", value: "sensorial" }
+                  - { label: "Protección Solar", value: "proteccion solar" }
+                  - { label: "Preparación Piel", value: "preparacion piel" }
+                  - { label: "Correctores, Iluminadores y Rubores", value: "correctores iluminadores rubores" }
+                  - { label: "Delineadores", value: "delineadores" }
+                  - { label: "Pestañas y Cejas", value: "pestanas y cejas" }
+                  - { label: "Sombras", value: "sombras" }
+                  - { label: "Labios", value: "labios" }
+                  - { label: "Uñas", value: "unas" }
+                  - { label: "Aceites Esenciales", value: "aceites esenciales" }
+              - { label: "Contenido / Medida (ml/g)", name: "medida", widget: "string", required: false }
+              - { label: "Precio ($ ARS)", name: "precio", widget: "number", value_type: "int" }
+              - label: "Estado del Stock"
+                name: "stock"
+                widget: "select"
+                default: "con stock"
+                options:
+                  - { label: "Disponible (Con Stock)", value: "con stock" }
+                  - { label: "Agotado (Sin Stock)", value: "sin stock" }
+              - { label: "Descripción o Modo de Uso", name: "descripcion", widget: "text", required: false }
+              - { label: "Fotografía", name: "imagen", widget: "image", required: false }
