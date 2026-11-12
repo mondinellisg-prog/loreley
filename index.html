@@ -252,7 +252,7 @@
       empty.classList.add('hidden');
       grid.innerHTML = filtered.map(prod => {
         const inStock = prod.stock === "con stock";
-        const imgUrl = prod.imagen || `assets/productos/${prod.id}.jpg`;
+        const imgUrl = prod.imagen || `${prod.id}.jpg`;
 
         return `
           <article class="bg-white rounded-2xl border border-stone-200/70 p-3 flex flex-col justify-between hover:shadow-md transition">
