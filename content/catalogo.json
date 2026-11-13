@@ -1,5 +1,4 @@
-{
-  "productos": [
+[
     { "id": "501520004", "nombre": "Sérum demaquillante de ojos y labios", "medida": "70 ml/g", "descripcion": "", "precio": 29500, "categoria": "cuidados basicos", "stock": "con stock", "imagen": "501520004.jpg" },
     { "id": "501590004", "nombre": "Sérum demaquillante protector", "medida": "70 ml/g", "descripcion": "", "precio": 29400, "categoria": "cuidados basicos", "stock": "con stock", "imagen": "501590004.jpg" },
     { "id": "545080004", "nombre": "Leche de limpieza con fitoflavonas de soja", "medida": "100 ml/g", "descripcion": "", "precio": 19900, "categoria": "cuidados basicos", "stock": "con stock", "imagen": "545080004.jpg" },
@@ -358,4 +357,4 @@
     { "id": "512060004", "nombre": "Relax - Orquidea Amber - Roll on", "medida": "10 ml/g", "descripcion": "", "precio": 14900, "categoria": "aceites esenciales", "stock": "con stock", "imagen": "512060004.jpg" },
     { "id": "512070004", "nombre": "Energy - Menta Limon y Jengibre - Roll on", "medida": "10 ml/g", "descripcion": "", "precio": 14900, "categoria": "aceites esenciales", "stock": "con stock", "imagen": "512070004.jpg" }
   ]
-}
+
