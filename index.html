@@ -271,42 +271,15 @@
     </div>
 
     <!-- LÓGICA JAVASCRIPT ADAPTADA A JSON LOCAL -->
+ <!-- LÓGICA JAVASCRIPT ADAPTADA A JSON LOCAL + CATEGORÍAS DINÁMICAS -->
     <script>
-        // ARCHIVO JSON LOCAL GENERADO Y GESTIONADO POR SVELTIA CMS
         const CATALOG_JSON_URL = './content/catalogo.json';
-
-        // LISTA EXACTA DE TUS 24 CATEGORÍAS
-        const categoryList = [
-            "cuidados basicos",
-            "dermatocosmetica dr. enero",
-            "pieles delicadas",
-            "antiage",
-            "hidratacion humectacion tonificacion",
-            "pieles grasas",
-            "manos y pies",
-            "cuidados masculinos",
-            "cuidados capilares",
-            "laca beauty",
-            "corporales",
-            "renovacion celular",
-            "teens",
-            "fragancias",
-            "sensorial",
-            "proteccion solar",
-            "preparacion piel",
-            "correctores iluminadores rubores",
-            "delineadores",
-            "pestanas y cejas",
-            "sombras",
-            "labios",
-            "unas",
-            "aceites esenciales"
-        ];
+        const CATEGORIES_JSON_URL = './content/categorias.json';
 
         let allProducts = [];
+        let categoryList = [];
         let cart = [];
 
-        // SANITIZACIÓN ANTI-XSS
         function escapeHTML(str) {
             if (!str) return '';
             return String(str)
@@ -317,12 +290,10 @@
                 .replace(/'/g, '&#39;');
         }
 
-        // LIMPIEZA DE PRECIO
         function cleanPrice(priceVal) {
             if (typeof priceVal === 'number') return priceVal;
             if (!priceVal) return 0;
-            let s = priceVal.toString().trim();
-            s = s.replace(/\$/g, '').replace(/\s/g, '');
+            let s = priceVal.toString().trim().replace(/\$/g, '').replace(/\s/g, '');
             if (s.includes('.') && s.split('.').pop().length === 3) {
                 s = s.replace(/\./g, '');
             }
@@ -330,7 +301,6 @@
             return parseFloat(s) || 0;
         }
 
-        // NORMALIZAR TEXTOS
         function normalizeText(text) {
             if (!text) return "";
             return text.toString().trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -338,15 +308,17 @@
 
         async function fetchProducts() {
             try {
-                // cache: 'no-cache' asegura que al actualizar stock/precios desde el CMS se vean al instante
-                const response = await fetch(CATALOG_JSON_URL, { cache: 'no-cache' });
-                if (!response.ok) throw new Error('Error al obtener catalogo.json');
+                const [prodRes, catRes] = await Promise.all([
+                    fetch(CATALOG_JSON_URL, { cache: 'no-cache' }),
+                    fetch(CATEGORIES_JSON_URL, { cache: 'no-cache' }).catch(() => null)
+                ]);
+
+                if (!prodRes.ok) throw new Error('Error al obtener catalogo.json');
                 
-                const data = await response.json();
+                const data = await prodRes.json();
                 const rawList = Array.isArray(data) ? data : (data.productos || []);
 
                 allProducts = rawList.map(item => {
-                    // Compatibilidad tanto con el campo "medida" del JSON como "ml_g"
                     const rawMedida = item.medida || item.ml_g || '';
                     const medidaFormateada = rawMedida 
                         ? (rawMedida.toString().toLowerCase().includes('ml') || rawMedida.toString().toLowerCase().includes('g') ? rawMedida : `${rawMedida} ml/g`)
@@ -360,9 +332,19 @@
                         precio: cleanPrice(item.precio),
                         categoria: normalizeText(item.categoria),
                         stock: item.stock ? normalizeText(item.stock) : 'con stock',
-                        imagen: item.imagen || `${item.id}.jpg`
+                        imagen: item.imagen || `assets/productos/${item.id}.jpg`
                     };
                 }).filter(p => p.nombre !== '');
+
+                // Cargar categorías dinámicas desde content/categorias.json
+                if (catRes && catRes.ok) {
+                    const catData = await catRes.json();
+                    categoryList = Array.isArray(catData) ? catData : [];
+                } else {
+                    // Respaldo automático si faltara categorias.json
+                    const unicas = [...new Set(allProducts.map(p => p.categoria).filter(Boolean))];
+                    categoryList = unicas.map(c => ({ id: c, nombre: c }));
+                }
 
                 initCategoryBar();
                 renderProducts(allProducts);
@@ -382,8 +364,8 @@
             categoryList.forEach(cat => {
                 const btn = document.createElement('button');
                 btn.className = "font-label text-xs tracking-widest uppercase text-stone-400 hover:text-on-surface transition-colors filter-btn shrink-0 pb-1 border-b-2 border-transparent";
-                btn.innerText = cat;
-                btn.onclick = () => filterProducts(cat, btn);
+                btn.innerText = cat.nombre || cat.id;
+                btn.onclick = () => filterProducts(cat.id, btn);
                 bar.appendChild(btn);
             });
         }
@@ -450,9 +432,6 @@
             }
         }
 
-        // ==========================================
-        // LÓGICA DEL CARRITO
-        // ==========================================
         function toggleCart() {
             const drawer = document.getElementById('cart-drawer');
             const overlay = document.getElementById('cart-overlay');
@@ -527,9 +506,6 @@
             totalSpan.innerText = `$${total.toLocaleString('es-AR')}`;
         }
 
-        // ==========================================
-        // ENVÍO DE PEDIDO A WHATSAPP
-        // ==========================================
         function checkoutWhatsApp() {
             if (cart.length === 0) return alert("Tu bolsa está vacía. Agrega productos para continuar.");
             
@@ -544,11 +520,10 @@
             msg += `\n💳 *Método de pago:* ${method}`;
             msg += `\n\n_Pedido generado desde el catálogo digital._`;
 
-            const whatsappUrl = `https://wa.me/5491157684431?text=${encodeURIComponent(msg)}`;
+            const whatsappUrl = `https://wa.me/5491136293941?text=${encodeURIComponent(msg)}`;
             window.open(whatsappUrl, '_blank');
         }
 
-        // Iniciar
         fetchProducts();
     </script>
 </body>
