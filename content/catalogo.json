@@ -7,7 +7,7 @@
     "precio": 31500,
     "stock": "con stock",
     "descripcion": "",
-    "imagen": "501520004.jpg"
+    "imagen": "assets/productos/501520004.jpg"
   },
   {
     "id": "501590004",
@@ -17,7 +17,7 @@
     "precio": 29400,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "501590004.jpg"
+    "imagen": "assets/productos/501590004.jpg"
   },
   {
     "id": "545080004",
@@ -27,7 +27,7 @@
     "precio": 19900,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "545080004.jpg"
+    "imagen": "assets/productos/545080004.jpg"
   },
   {
     "id": "501040004",
@@ -37,7 +37,7 @@
     "precio": 20200,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "501040004.jpg"
+    "imagen": "assets/productos/501040004.jpg"
   },
   {
     "id": "501500004",
@@ -47,7 +47,7 @@
     "precio": 20500,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "501500004.jpg"
+    "imagen": "assets/productos/501500004.jpg"
   },
   {
     "id": "501530004",
@@ -57,7 +57,7 @@
     "precio": 22900,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "501530004.jpg"
+    "imagen": "assets/productos/501530004.jpg"
   },
   {
     "id": "501510004",
@@ -67,7 +67,7 @@
     "precio": 21400,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "501510004.jpg"
+    "imagen": "assets/productos/501510004.jpg"
   },
   {
     "id": "510590004",
@@ -77,7 +77,7 @@
     "precio": 17700,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "510590004.jpg"
+    "imagen": "assets/productos/510590004.jpg"
   },
   {
     "id": "544850004",
@@ -87,7 +87,7 @@
     "precio": 7400,
     "categoria": "cuidados basicos",
     "stock": "con stock",
-    "imagen": "544850004.jpg"
+    "imagen": "assets/productos/544850004.jpg"
   },
   {
     "id": "505070004",
@@ -97,7 +97,7 @@
     "precio": 28700,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "505070004.jpg"
+    "imagen": "assets/productos/505070004.jpg"
   },
   {
     "id": "505030004",
@@ -107,7 +107,7 @@
     "precio": 43600,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "505030004.jpg"
+    "imagen": "assets/productos/505030004.jpg"
   },
   {
     "id": "546010004",
@@ -117,7 +117,7 @@
     "precio": 32300,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546010004.jpg"
+    "imagen": "assets/productos/546010004.jpg"
   },
   {
     "id": "546170004",
@@ -127,7 +127,7 @@
     "precio": 31300,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546170004.jpg"
+    "imagen": "assets/productos/546170004.jpg"
   },
   {
     "id": "546070004",
@@ -137,7 +137,7 @@
     "precio": 28700,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546070004.jpg"
+    "imagen": "assets/productos/546070004.jpg"
   },
   {
     "id": "545160004",
@@ -147,7 +147,7 @@
     "precio": 46900,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "545160004.jpg"
+    "imagen": "assets/productos/545160004.jpg"
   },
   {
     "id": "545190004",
@@ -157,7 +157,7 @@
     "precio": 48200,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "545190004.jpg"
+    "imagen": "assets/productos/545190004.jpg"
   },
   {
     "id": "545170004",
@@ -167,7 +167,7 @@
     "precio": 41100,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "545170004.jpg"
+    "imagen": "assets/productos/545170004.jpg"
   },
   {
     "id": "527180003",
@@ -177,7 +177,7 @@
     "precio": 15300,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "527180003.jpg"
+    "imagen": "assets/productos/527180003.jpg"
   },
   {
     "id": "546090004",
@@ -187,7 +187,7 @@
     "precio": 36500,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546090004.jpg"
+    "imagen": "assets/productos/546090004.jpg"
   },
   {
     "id": "527110004",
@@ -197,7 +197,7 @@
     "precio": 35000,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "527110004.jpg"
+    "imagen": "assets/productos/527110004.jpg"
   },
   {
     "id": "546190004",
@@ -207,7 +207,7 @@
     "precio": 31000,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546190004.jpg"
+    "imagen": "assets/productos/546190004.jpg"
   },
   {
     "id": "546210004",
@@ -217,7 +217,7 @@
     "precio": 28900,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546210004.jpg"
+    "imagen": "assets/productos/546210004.jpg"
   },
   {
     "id": "545350004",
@@ -227,7 +227,7 @@
     "precio": 46600,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "545350004.jpg"
+    "imagen": "assets/productos/545350004.jpg"
   },
   {
     "id": "545360004",
@@ -237,7 +237,7 @@
     "precio": 42000,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "545360004.jpg"
+    "imagen": "assets/productos/545360004.jpg"
   },
   {
     "id": "546230004",
@@ -247,7 +247,7 @@
     "precio": 34900,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546230004.jpg"
+    "imagen": "assets/productos/546230004.jpg"
   },
   {
     "id": "546240004",
@@ -257,7 +257,7 @@
     "precio": 34500,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546240004.jpg"
+    "imagen": "assets/productos/546240004.jpg"
   },
   {
     "id": "546250004",
@@ -267,7 +267,7 @@
     "precio": 38000,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546250004.jpg"
+    "imagen": "assets/productos/546250004.jpg"
   },
   {
     "id": "546260004",
@@ -277,7 +277,7 @@
     "precio": 35100,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546260004.jpg"
+    "imagen": "assets/productos/546260004.jpg"
   },
   {
     "id": "546270004",
@@ -287,7 +287,7 @@
     "precio": 29700,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546270004.jpg"
+    "imagen": "assets/productos/546270004.jpg"
   },
   {
     "id": "546280004",
@@ -297,7 +297,7 @@
     "precio": 45000,
     "categoria": "dermatocosmetica dr. enero",
     "stock": "con stock",
-    "imagen": "546280004.jpg"
+    "imagen": "assets/productos/546280004.jpg"
   },
   {
     "id": "546100004",
@@ -307,7 +307,7 @@
     "precio": 32500,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "546100004.jpg"
+    "imagen": "assets/productos/546100004.jpg"
   },
   {
     "id": "503140004",
@@ -317,7 +317,7 @@
     "precio": 21400,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "503140004.jpg"
+    "imagen": "assets/productos/503140004.jpg"
   },
   {
     "id": "503130003",
@@ -327,7 +327,7 @@
     "precio": 52200,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "503130003.jpg"
+    "imagen": "assets/productos/503130003.jpg"
   },
   {
     "id": "503500004",
@@ -337,7 +337,7 @@
     "precio": 24500,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "503500004.jpg"
+    "imagen": "assets/productos/503500004.jpg"
   },
   {
     "id": "502540004",
@@ -347,7 +347,7 @@
     "precio": 17300,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "502540004.jpg"
+    "imagen": "assets/productos/502540004.jpg"
   },
   {
     "id": "510510003",
@@ -357,7 +357,7 @@
     "precio": 50400,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "510510003.jpg"
+    "imagen": "assets/productos/510510003.jpg"
   },
   {
     "id": "503190004",
@@ -367,7 +367,7 @@
     "precio": 37800,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "503190004.jpg"
+    "imagen": "assets/productos/503190004.jpg"
   },
   {
     "id": "510610004",
@@ -377,7 +377,7 @@
     "precio": 16800,
     "categoria": "pieles delicadas",
     "stock": "con stock",
-    "imagen": "510610004.jpg"
+    "imagen": "assets/productos/510610004.jpg"
   },
   {
     "id": "503180004",
@@ -387,7 +387,7 @@
     "precio": 47500,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503180004.jpg"
+    "imagen": "assets/productos/503180004.jpg"
   },
   {
     "id": "503200004",
@@ -397,7 +397,7 @@
     "precio": 45300,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503200004.jpg"
+    "imagen": "assets/productos/503200004.jpg"
   },
   {
     "id": "546060004",
@@ -407,7 +407,7 @@
     "precio": 49000,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "546060004.jpg"
+    "imagen": "assets/productos/546060004.jpg"
   },
   {
     "id": "546050004",
@@ -417,7 +417,7 @@
     "precio": 35900,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "546050004.jpg"
+    "imagen": "assets/productos/546050004.jpg"
   },
   {
     "id": "503160004",
@@ -427,7 +427,7 @@
     "precio": 37300,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503160004.jpg"
+    "imagen": "assets/productos/503160004.jpg"
   },
   {
     "id": "503150004",
@@ -437,7 +437,7 @@
     "precio": 54900,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503150004.jpg"
+    "imagen": "assets/productos/503150004.jpg"
   },
   {
     "id": "503170004",
@@ -447,7 +447,7 @@
     "precio": 49600,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503170004.jpg"
+    "imagen": "assets/productos/503170004.jpg"
   },
   {
     "id": "525090004",
@@ -457,7 +457,7 @@
     "precio": 34700,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "525090004.jpg"
+    "imagen": "assets/productos/525090004.jpg"
   },
   {
     "id": "543040004",
@@ -467,7 +467,7 @@
     "precio": 38200,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "543040004.jpg"
+    "imagen": "assets/productos/543040004.jpg"
   },
   {
     "id": "505210004",
@@ -477,7 +477,7 @@
     "precio": 33900,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "505210004.jpg"
+    "imagen": "assets/productos/505210004.jpg"
   },
   {
     "id": "543060004",
@@ -487,7 +487,7 @@
     "precio": 37500,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "543060004.jpg"
+    "imagen": "assets/productos/543060004.jpg"
   },
   {
     "id": "543070004",
@@ -497,7 +497,7 @@
     "precio": 53700,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "543070004.jpg"
+    "imagen": "assets/productos/543070004.jpg"
   },
   {
     "id": "545020004",
@@ -507,7 +507,7 @@
     "precio": 31900,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "545020004.jpg"
+    "imagen": "assets/productos/545020004.jpg"
   },
   {
     "id": "545040004",
@@ -517,7 +517,7 @@
     "precio": 26600,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "545040004.jpg"
+    "imagen": "assets/productos/545040004.jpg"
   },
   {
     "id": "545340004",
@@ -527,7 +527,7 @@
     "precio": 57100,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "545340004.jpg"
+    "imagen": "assets/productos/545340004.jpg"
   },
   {
     "id": "545300004",
@@ -537,7 +537,7 @@
     "precio": 40800,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "545300004.jpg"
+    "imagen": "assets/productos/545300004.jpg"
   },
   {
     "id": "505500004",
@@ -547,7 +547,7 @@
     "precio": 38600,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "505500004.jpg"
+    "imagen": "assets/productos/505500004.jpg"
   },
   {
     "id": "503530004",
@@ -557,7 +557,7 @@
     "precio": 45200,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503530004.jpg"
+    "imagen": "assets/productos/503530004.jpg"
   },
   {
     "id": "505510004",
@@ -567,7 +567,7 @@
     "precio": 37800,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "505510004.jpg"
+    "imagen": "assets/productos/505510004.jpg"
   },
   {
     "id": "505520004",
@@ -577,7 +577,7 @@
     "precio": 35100,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "505520004.jpg"
+    "imagen": "assets/productos/505520004.jpg"
   },
   {
     "id": "503570004",
@@ -587,7 +587,7 @@
     "precio": 36800,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503570004.jpg"
+    "imagen": "assets/productos/503570004.jpg"
   },
   {
     "id": "510550003",
@@ -597,7 +597,7 @@
     "precio": 42100,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "510550003.jpg"
+    "imagen": "assets/productos/510550003.jpg"
   },
   {
     "id": "505200004",
@@ -607,7 +607,7 @@
     "precio": 29600,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "505200004.jpg"
+    "imagen": "assets/productos/505200004.jpg"
   },
   {
     "id": "503230004",
@@ -617,7 +617,7 @@
     "precio": 35300,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503230004.jpg"
+    "imagen": "assets/productos/503230004.jpg"
   },
   {
     "id": "503240004",
@@ -627,7 +627,7 @@
     "precio": 31400,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503240004.jpg"
+    "imagen": "assets/productos/503240004.jpg"
   },
   {
     "id": "503250004",
@@ -637,7 +637,7 @@
     "precio": 41900,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503250004.jpg"
+    "imagen": "assets/productos/503250004.jpg"
   },
   {
     "id": "503270004",
@@ -647,7 +647,7 @@
     "precio": 36700,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503270004.jpg"
+    "imagen": "assets/productos/503270004.jpg"
   },
   {
     "id": "503260004",
@@ -657,7 +657,7 @@
     "precio": 27900,
     "categoria": "antiage",
     "stock": "con stock",
-    "imagen": "503260004.jpg"
+    "imagen": "assets/productos/503260004.jpg"
   },
   {
     "id": "502510004",
@@ -667,7 +667,7 @@
     "precio": 26000,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "502510004.jpg"
+    "imagen": "assets/productos/502510004.jpg"
   },
   {
     "id": "503560004",
@@ -677,7 +677,7 @@
     "precio": 26200,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "503560004.jpg"
+    "imagen": "assets/productos/503560004.jpg"
   },
   {
     "id": "503540004",
@@ -687,7 +687,7 @@
     "precio": 21200,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "503540004.jpg"
+    "imagen": "assets/productos/503540004.jpg"
   },
   {
     "id": "545090004",
@@ -697,7 +697,7 @@
     "precio": 24200,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "545090004.jpg"
+    "imagen": "assets/productos/545090004.jpg"
   },
   {
     "id": "503580004",
@@ -707,7 +707,7 @@
     "precio": 24600,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "503580004.jpg"
+    "imagen": "assets/productos/503580004.jpg"
   },
   {
     "id": "543030004",
@@ -717,7 +717,7 @@
     "precio": 28600,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "543030004.jpg"
+    "imagen": "assets/productos/543030004.jpg"
   },
   {
     "id": "503520004",
@@ -727,7 +727,7 @@
     "precio": 37300,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "503520004.jpg"
+    "imagen": "assets/productos/503520004.jpg"
   },
   {
     "id": "503070004",
@@ -737,7 +737,7 @@
     "precio": 34200,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "503070004.jpg"
+    "imagen": "assets/productos/503070004.jpg"
   },
   {
     "id": "545270004",
@@ -747,7 +747,7 @@
     "precio": 24700,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "545270004.jpg"
+    "imagen": "assets/productos/545270004.jpg"
   },
   {
     "id": "513080004",
@@ -757,7 +757,7 @@
     "precio": 15200,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "513080004.jpg"
+    "imagen": "assets/productos/513080004.jpg"
   },
   {
     "id": "513100004",
@@ -767,7 +767,7 @@
     "precio": 46000,
     "categoria": "hidratacion humectacion tonificacion",
     "stock": "con stock",
-    "imagen": "513100004.jpg"
+    "imagen": "assets/productos/513100004.jpg"
   },
   {
     "id": "506510004",
@@ -777,7 +777,7 @@
     "precio": 22600,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506510004.jpg"
+    "imagen": "assets/productos/506510004.jpg"
   },
   {
     "id": "506520004",
@@ -787,7 +787,7 @@
     "precio": 22600,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506520004.jpg"
+    "imagen": "assets/productos/506520004.jpg"
   },
   {
     "id": "506530004",
@@ -797,7 +797,7 @@
     "precio": 22600,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506530004.jpg"
+    "imagen": "assets/productos/506530004.jpg"
   },
   {
     "id": "506070004",
@@ -807,7 +807,7 @@
     "precio": 29900,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506070004.jpg"
+    "imagen": "assets/productos/506070004.jpg"
   },
   {
     "id": "506110004",
@@ -817,7 +817,7 @@
     "precio": 25200,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506110004.jpg"
+    "imagen": "assets/productos/506110004.jpg"
   },
   {
     "id": "506140004",
@@ -827,7 +827,7 @@
     "precio": 29800,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506140004.jpg"
+    "imagen": "assets/productos/506140004.jpg"
   },
   {
     "id": "506120004",
@@ -837,7 +837,7 @@
     "precio": 24700,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506120004.jpg"
+    "imagen": "assets/productos/506120004.jpg"
   },
   {
     "id": "506500004",
@@ -847,7 +847,7 @@
     "precio": 22700,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506500004.jpg"
+    "imagen": "assets/productos/506500004.jpg"
   },
   {
     "id": "545240004",
@@ -857,7 +857,7 @@
     "precio": 20100,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "545240004.jpg"
+    "imagen": "assets/productos/545240004.jpg"
   },
   {
     "id": "502500004",
@@ -867,7 +867,7 @@
     "precio": 22700,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "502500004.jpg"
+    "imagen": "assets/productos/502500004.jpg"
   },
   {
     "id": "515540004",
@@ -877,7 +877,7 @@
     "precio": 21700,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "515540004.jpg"
+    "imagen": "assets/productos/515540004.jpg"
   },
   {
     "id": "506150004",
@@ -887,7 +887,7 @@
     "precio": 23200,
     "categoria": "pieles grasas",
     "stock": "con stock",
-    "imagen": "506150004.jpg"
+    "imagen": "assets/productos/506150004.jpg"
   },
   {
     "id": "527050004",
@@ -897,7 +897,7 @@
     "precio": 29700,
     "categoria": "manos y pies",
     "stock": "con stock",
-    "imagen": "527050004.jpg"
+    "imagen": "assets/productos/527050004.jpg"
   },
   {
     "id": "527080004",
@@ -907,7 +907,7 @@
     "precio": 13900,
     "categoria": "manos y pies",
     "stock": "con stock",
-    "imagen": "527080004.jpg"
+    "imagen": "assets/productos/527080004.jpg"
   },
   {
     "id": "527210004",
@@ -917,7 +917,7 @@
     "precio": 22900,
     "categoria": "manos y pies",
     "stock": "con stock",
-    "imagen": "527210004.jpg"
+    "imagen": "assets/productos/527210004.jpg"
   },
   {
     "id": "527170004",
@@ -927,7 +927,7 @@
     "precio": 21600,
     "categoria": "manos y pies",
     "stock": "con stock",
-    "imagen": "527170004.jpg"
+    "imagen": "assets/productos/527170004.jpg"
   },
   {
     "id": "530020004",
@@ -937,7 +937,7 @@
     "precio": 32300,
     "categoria": "cuidados masculinos",
     "stock": "con stock",
-    "imagen": "530020004.jpg"
+    "imagen": "assets/productos/530020004.jpg"
   },
   {
     "id": "530030004",
@@ -947,7 +947,7 @@
     "precio": 34200,
     "categoria": "cuidados masculinos",
     "stock": "con stock",
-    "imagen": "530030004.jpg"
+    "imagen": "assets/productos/530030004.jpg"
   },
   {
     "id": "530050004",
@@ -957,7 +957,7 @@
     "precio": 37000,
     "categoria": "cuidados masculinos",
     "stock": "con stock",
-    "imagen": "530050004.jpg"
+    "imagen": "assets/productos/530050004.jpg"
   },
   {
     "id": "515560004",
@@ -967,7 +967,7 @@
     "precio": 21300,
     "categoria": "cuidados capilares",
     "stock": "con stock",
-    "imagen": "515560004.jpg"
+    "imagen": "assets/productos/515560004.jpg"
   },
   {
     "id": "515660004",
@@ -977,7 +977,7 @@
     "precio": 19700,
     "categoria": "cuidados capilares",
     "stock": "con stock",
-    "imagen": "515660004.jpg"
+    "imagen": "assets/productos/515660004.jpg"
   },
   {
     "id": "515600004",
@@ -987,7 +987,7 @@
     "precio": 23700,
     "categoria": "cuidados capilares",
     "stock": "con stock",
-    "imagen": "515600004.jpg"
+    "imagen": "assets/productos/515600004.jpg"
   },
   {
     "id": "515680004",
@@ -997,7 +997,7 @@
     "precio": 36600,
     "categoria": "cuidados capilares",
     "stock": "con stock",
-    "imagen": "515680004.jpg"
+    "imagen": "assets/productos/515680004.jpg"
   },
   {
     "id": "515500004",
@@ -1007,7 +1007,7 @@
     "precio": 17400,
     "categoria": "cuidados capilares",
     "stock": "con stock",
-    "imagen": "515500004.jpg"
+    "imagen": "assets/productos/515500004.jpg"
   },
   {
     "id": "515540004",
@@ -1017,7 +1017,7 @@
     "precio": 21700,
     "categoria": "cuidados capilares",
     "stock": "con stock",
-    "imagen": "515540004.jpg"
+    "imagen": "assets/productos/515540004.jpg"
   },
   {
     "id": "503590004",
@@ -1027,7 +1027,7 @@
     "precio": 11200,
     "categoria": "laca beauty",
     "stock": "con stock",
-    "imagen": "503590004.jpg"
+    "imagen": "assets/productos/503590004.jpg"
   },
   {
     "id": "503600004",
@@ -1037,7 +1037,7 @@
     "precio": 20500,
     "categoria": "laca beauty",
     "stock": "con stock",
-    "imagen": "503600004.jpg"
+    "imagen": "assets/productos/503600004.jpg"
   },
   {
     "id": "505530004",
@@ -1047,7 +1047,7 @@
     "precio": 21000,
     "categoria": "laca beauty",
     "stock": "con stock",
-    "imagen": "505530004.jpg"
+    "imagen": "assets/productos/505530004.jpg"
   },
   {
     "id": "501610004",
@@ -1057,7 +1057,7 @@
     "precio": 14300,
     "categoria": "laca beauty",
     "stock": "con stock",
-    "imagen": "501610004.jpg"
+    "imagen": "assets/productos/501610004.jpg"
   },
   {
     "id": "511910004",
@@ -1067,7 +1067,7 @@
     "precio": 16300,
     "categoria": "laca beauty",
     "stock": "con stock",
-    "imagen": "511910004.jpg"
+    "imagen": "assets/productos/511910004.jpg"
   },
   {
     "id": "511580003",
@@ -1077,7 +1077,7 @@
     "precio": 26300,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511580003.jpg"
+    "imagen": "assets/productos/511580003.jpg"
   },
   {
     "id": "511620004",
@@ -1087,7 +1087,7 @@
     "precio": 18200,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511620004.jpg"
+    "imagen": "assets/productos/511620004.jpg"
   },
   {
     "id": "511610003",
@@ -1097,7 +1097,7 @@
     "precio": 33200,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511610003.jpg"
+    "imagen": "assets/productos/511610003.jpg"
   },
   {
     "id": "511640003",
@@ -1107,7 +1107,7 @@
     "precio": 32500,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511640003.jpg"
+    "imagen": "assets/productos/511640003.jpg"
   },
   {
     "id": "511790003",
@@ -1117,7 +1117,7 @@
     "precio": 23700,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511790003.jpg"
+    "imagen": "assets/productos/511790003.jpg"
   },
   {
     "id": "511940003",
@@ -1127,7 +1127,7 @@
     "precio": 33200,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511940003.jpg"
+    "imagen": "assets/productos/511940003.jpg"
   },
   {
     "id": "546200004",
@@ -1137,7 +1137,7 @@
     "precio": 10800,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "546200004.jpg"
+    "imagen": "assets/productos/546200004.jpg"
   },
   {
     "id": "512000003",
@@ -1147,7 +1147,7 @@
     "precio": 39000,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "512000003.jpg"
+    "imagen": "assets/productos/512000003.jpg"
   },
   {
     "id": "511190004",
@@ -1157,7 +1157,7 @@
     "precio": 12000,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "511190004.jpg"
+    "imagen": "assets/productos/511190004.jpg"
   },
   {
     "id": "512080003",
@@ -1167,7 +1167,7 @@
     "precio": 44800,
     "categoria": "corporales",
     "stock": "con stock",
-    "imagen": "512080003.jpg"
+    "imagen": "assets/productos/512080003.jpg"
   },
   {
     "id": "540020004",
@@ -1177,7 +1177,7 @@
     "precio": 32600,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540020004.jpg"
+    "imagen": "assets/productos/540020004.jpg"
   },
   {
     "id": "540040004",
@@ -1187,7 +1187,7 @@
     "precio": 34200,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540040004.jpg"
+    "imagen": "assets/productos/540040004.jpg"
   },
   {
     "id": "545210004",
@@ -1197,7 +1197,7 @@
     "precio": 29400,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "545210004.jpg"
+    "imagen": "assets/productos/545210004.jpg"
   },
   {
     "id": "540010004",
@@ -1207,7 +1207,7 @@
     "precio": 34800,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540010004.jpg"
+    "imagen": "assets/productos/540010004.jpg"
   },
   {
     "id": "540110004",
@@ -1217,7 +1217,7 @@
     "precio": 32600,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540110004.jpg"
+    "imagen": "assets/productos/540110004.jpg"
   },
   {
     "id": "540130004",
@@ -1227,7 +1227,7 @@
     "precio": 34400,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540130004.jpg"
+    "imagen": "assets/productos/540130004.jpg"
   },
   {
     "id": "540140004",
@@ -1237,7 +1237,7 @@
     "precio": 33000,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540140004.jpg"
+    "imagen": "assets/productos/540140004.jpg"
   },
   {
     "id": "540160004",
@@ -1247,7 +1247,7 @@
     "precio": 24900,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540160004.jpg"
+    "imagen": "assets/productos/540160004.jpg"
   },
   {
     "id": "540150004",
@@ -1257,7 +1257,7 @@
     "precio": 25000,
     "categoria": "renovacion celular",
     "stock": "con stock",
-    "imagen": "540150004.jpg"
+    "imagen": "assets/productos/540150004.jpg"
   },
   {
     "id": "501600004",
@@ -1267,7 +1267,7 @@
     "precio": 22100,
     "categoria": "teens",
     "stock": "con stock",
-    "imagen": "501600004.jpg"
+    "imagen": "assets/productos/501600004.jpg"
   },
   {
     "id": "511860003",
@@ -1278,7 +1278,7 @@
     "precio": 28700,
     "categoria": "teens",
     "stock": "con stock",
-    "imagen": "511860003.jpg"
+    "imagen": "assets/productos/511860003.jpg"
   },
   {
     "id": "506130004",
@@ -1288,7 +1288,7 @@
     "precio": 19000,
     "categoria": "teens",
     "stock": "con stock",
-    "imagen": "506130004.jpg"
+    "imagen": "assets/productos/506130004.jpg"
   },
   {
     "id": "17060004",
@@ -1298,7 +1298,7 @@
     "precio": 29000,
     "categoria": "fragancias",
     "stock": "con stock",
-    "imagen": "17060004.jpg"
+    "imagen": "assets/productos/17060004.jpg"
   },
   {
     "id": "17070004",
@@ -1308,7 +1308,7 @@
     "precio": 32800,
     "categoria": "fragancias",
     "stock": "con stock",
-    "imagen": "17070004.jpg"
+    "imagen": "assets/productos/17070004.jpg"
   },
   {
     "id": "17090004",
@@ -1318,7 +1318,7 @@
     "precio": 36000,
     "categoria": "fragancias",
     "stock": "con stock",
-    "imagen": "17090004.jpg"
+    "imagen": "assets/productos/17090004.jpg"
   },
   {
     "id": "17080004",
@@ -1328,7 +1328,7 @@
     "precio": 33700,
     "categoria": "fragancias",
     "stock": "con stock",
-    "imagen": "17080004.jpg"
+    "imagen": "assets/productos/17080004.jpg"
   },
   {
     "id": "17110004",
@@ -1338,7 +1338,7 @@
     "precio": 39600,
     "categoria": "fragancias",
     "stock": "con stock",
-    "imagen": "17110004.jpg"
+    "imagen": "assets/productos/17110004.jpg"
   },
   {
     "id": "511870003",
@@ -1348,7 +1348,7 @@
     "precio": 20200,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511870003.jpg"
+    "imagen": "assets/productos/511870003.jpg"
   },
   {
     "id": "511880003",
@@ -1358,7 +1358,7 @@
     "precio": 20200,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511880003.jpg"
+    "imagen": "assets/productos/511880003.jpg"
   },
   {
     "id": "511890003",
@@ -1368,7 +1368,7 @@
     "precio": 20200,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511890003.jpg"
+    "imagen": "assets/productos/511890003.jpg"
   },
   {
     "id": "511900003",
@@ -1378,7 +1378,7 @@
     "precio": 20200,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511900003.jpg"
+    "imagen": "assets/productos/511900003.jpg"
   },
   {
     "id": "503610004",
@@ -1388,7 +1388,7 @@
     "precio": 16000,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "503610004.jpg"
+    "imagen": "assets/productos/503610004.jpg"
   },
   {
     "id": "503620004",
@@ -1398,7 +1398,7 @@
     "precio": 16000,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "503620004.jpg"
+    "imagen": "assets/productos/503620004.jpg"
   },
   {
     "id": "503630004",
@@ -1408,7 +1408,7 @@
     "precio": 16000,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "503630004.jpg"
+    "imagen": "assets/productos/503630004.jpg"
   },
   {
     "id": "518171704",
@@ -1418,7 +1418,7 @@
     "precio": 27600,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "518171704.jpg"
+    "imagen": "assets/productos/518171704.jpg"
   },
   {
     "id": "518171804",
@@ -1428,7 +1428,7 @@
     "precio": 27600,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "518171804.jpg"
+    "imagen": "assets/productos/518171804.jpg"
   },
   {
     "id": "518337004",
@@ -1438,7 +1438,7 @@
     "precio": 24500,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "518337004.jpg"
+    "imagen": "assets/productos/518337004.jpg"
   },
   {
     "id": "18992904",
@@ -1448,7 +1448,7 @@
     "precio": 17800,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "18992904.jpg"
+    "imagen": "assets/productos/18992904.jpg"
   },
   {
     "id": "518295304",
@@ -1458,7 +1458,7 @@
     "precio": 28000,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "518295304.jpg"
+    "imagen": "assets/productos/518295304.jpg"
   },
   {
     "id": "511950004",
@@ -1468,7 +1468,7 @@
     "precio": 26800,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511950004.jpg"
+    "imagen": "assets/productos/511950004.jpg"
   },
   {
     "id": "511960004",
@@ -1478,7 +1478,7 @@
     "precio": 28300,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511960004.jpg"
+    "imagen": "assets/productos/511960004.jpg"
   },
   {
     "id": "511970004",
@@ -1488,7 +1488,7 @@
     "precio": 26700,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511970004.jpg"
+    "imagen": "assets/productos/511970004.jpg"
   },
   {
     "id": "511980004",
@@ -1498,7 +1498,7 @@
     "precio": 26000,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511980004.jpg"
+    "imagen": "assets/productos/511980004.jpg"
   },
   {
     "id": "511990004",
@@ -1508,7 +1508,7 @@
     "precio": 21500,
     "categoria": "sensorial",
     "stock": "con stock",
-    "imagen": "511990004.jpg"
+    "imagen": "assets/productos/511990004.jpg"
   },
   {
     "id": "513330004",
@@ -1518,7 +1518,7 @@
     "precio": 16000,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513330004.jpg"
+    "imagen": "assets/productos/513330004.jpg"
   },
   {
     "id": "513340004",
@@ -1528,7 +1528,7 @@
     "precio": 16000,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513340004.jpg"
+    "imagen": "assets/productos/513340004.jpg"
   },
   {
     "id": "513210004",
@@ -1538,7 +1538,7 @@
     "precio": 34700,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513210004.jpg"
+    "imagen": "assets/productos/513210004.jpg"
   },
   {
     "id": "513220004",
@@ -1548,7 +1548,7 @@
     "precio": 42100,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513220004.jpg"
+    "imagen": "assets/productos/513220004.jpg"
   },
   {
     "id": "513280004",
@@ -1558,7 +1558,7 @@
     "precio": 38900,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513280004.jpg"
+    "imagen": "assets/productos/513280004.jpg"
   },
   {
     "id": "513050004",
@@ -1568,7 +1568,7 @@
     "precio": 28000,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513050004.jpg"
+    "imagen": "assets/productos/513050004.jpg"
   },
   {
     "id": "513290004",
@@ -1578,7 +1578,7 @@
     "precio": 33300,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513290004.jpg"
+    "imagen": "assets/productos/513290004.jpg"
   },
   {
     "id": "513300004",
@@ -1588,7 +1588,7 @@
     "precio": 38800,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513300004.jpg"
+    "imagen": "assets/productos/513300004.jpg"
   },
   {
     "id": "513320004",
@@ -1598,7 +1598,7 @@
     "precio": 23500,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513320004.jpg"
+    "imagen": "assets/productos/513320004.jpg"
   },
   {
     "id": "513350004",
@@ -1608,7 +1608,7 @@
     "precio": 50800,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513350004.jpg"
+    "imagen": "assets/productos/513350004.jpg"
   },
   {
     "id": "513360004",
@@ -1618,7 +1618,7 @@
     "precio": 32400,
     "categoria": "proteccion solar",
     "stock": "con stock",
-    "imagen": "513360004.jpg"
+    "imagen": "assets/productos/513360004.jpg"
   },
   {
     "id": "518320704",
@@ -1628,7 +1628,7 @@
     "precio": 35200,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518320704.jpg"
+    "imagen": "assets/productos/518320704.jpg"
   },
   {
     "id": "518320604",
@@ -1638,7 +1638,7 @@
     "precio": 25800,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518320604.jpg"
+    "imagen": "assets/productos/518320604.jpg"
   },
   {
     "id": "518275904",
@@ -1648,7 +1648,7 @@
     "precio": 30700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518275904.jpg"
+    "imagen": "assets/productos/518275904.jpg"
   },
   {
     "id": "518275604",
@@ -1658,7 +1658,7 @@
     "precio": 32400,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518275604.jpg"
+    "imagen": "assets/productos/518275604.jpg"
   },
   {
     "id": "518275704",
@@ -1668,7 +1668,7 @@
     "precio": 27400,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518275704.jpg"
+    "imagen": "assets/productos/518275704.jpg"
   },
   {
     "id": "518276004",
@@ -1678,7 +1678,7 @@
     "precio": 30800,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518276004.jpg"
+    "imagen": "assets/productos/518276004.jpg"
   },
   {
     "id": "518117804",
@@ -1688,7 +1688,7 @@
     "precio": 26500,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518117804.jpg"
+    "imagen": "assets/productos/518117804.jpg"
   },
   {
     "id": "518145104",
@@ -1698,7 +1698,7 @@
     "precio": 24700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518145104.jpg"
+    "imagen": "assets/productos/518145104.jpg"
   },
   {
     "id": "518145204",
@@ -1708,7 +1708,7 @@
     "precio": 24700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518145204.jpg"
+    "imagen": "assets/productos/518145204.jpg"
   },
   {
     "id": "518145304",
@@ -1718,7 +1718,7 @@
     "precio": 24700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518145304.jpg"
+    "imagen": "assets/productos/518145304.jpg"
   },
   {
     "id": "518115104",
@@ -1728,7 +1728,7 @@
     "precio": 31500,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518115104.jpg"
+    "imagen": "assets/productos/518115104.jpg"
   },
   {
     "id": "518115204",
@@ -1738,7 +1738,7 @@
     "precio": 31500,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518115204.jpg"
+    "imagen": "assets/productos/518115204.jpg"
   },
   {
     "id": "518115304",
@@ -1748,7 +1748,7 @@
     "precio": 31500,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518115304.jpg"
+    "imagen": "assets/productos/518115304.jpg"
   },
   {
     "id": "518105104",
@@ -1758,7 +1758,7 @@
     "precio": 29700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518105104.jpg"
+    "imagen": "assets/productos/518105104.jpg"
   },
   {
     "id": "518105204",
@@ -1768,7 +1768,7 @@
     "precio": 29700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518105204.jpg"
+    "imagen": "assets/productos/518105204.jpg"
   },
   {
     "id": "518105304",
@@ -1778,7 +1778,7 @@
     "precio": 29700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518105304.jpg"
+    "imagen": "assets/productos/518105304.jpg"
   },
   {
     "id": "518111004",
@@ -1788,7 +1788,7 @@
     "precio": 25500,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518111004.jpg"
+    "imagen": "assets/productos/518111004.jpg"
   },
   {
     "id": "518116504",
@@ -1798,7 +1798,7 @@
     "precio": 22100,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518116504.jpg"
+    "imagen": "assets/productos/518116504.jpg"
   },
   {
     "id": "518116604",
@@ -1808,7 +1808,7 @@
     "precio": 22100,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518116604.jpg"
+    "imagen": "assets/productos/518116604.jpg"
   },
   {
     "id": "518116704",
@@ -1818,7 +1818,7 @@
     "precio": 17700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518116704.jpg"
+    "imagen": "assets/productos/518116704.jpg"
   },
   {
     "id": "518116804",
@@ -1828,7 +1828,7 @@
     "precio": 29600,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518116804.jpg"
+    "imagen": "assets/productos/518116804.jpg"
   },
   {
     "id": "518116904",
@@ -1838,7 +1838,7 @@
     "precio": 29600,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518116904.jpg"
+    "imagen": "assets/productos/518116904.jpg"
   },
   {
     "id": "518117004",
@@ -1848,7 +1848,7 @@
     "precio": 23600,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518117004.jpg"
+    "imagen": "assets/productos/518117004.jpg"
   },
   {
     "id": "518117504",
@@ -1858,7 +1858,7 @@
     "precio": 30800,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518117504.jpg"
+    "imagen": "assets/productos/518117504.jpg"
   },
   {
     "id": "518117604",
@@ -1868,7 +1868,7 @@
     "precio": 30800,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518117604.jpg"
+    "imagen": "assets/productos/518117604.jpg"
   },
   {
     "id": "518117704",
@@ -1878,7 +1878,7 @@
     "precio": 30800,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518117704.jpg"
+    "imagen": "assets/productos/518117704.jpg"
   },
   {
     "id": "518195204",
@@ -1888,7 +1888,7 @@
     "precio": 31300,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518195204.jpg"
+    "imagen": "assets/productos/518195204.jpg"
   },
   {
     "id": "518195304",
@@ -1898,7 +1898,7 @@
     "precio": 31300,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518195304.jpg"
+    "imagen": "assets/productos/518195304.jpg"
   },
   {
     "id": "518110804",
@@ -1908,7 +1908,7 @@
     "precio": 32700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518110804.jpg"
+    "imagen": "assets/productos/518110804.jpg"
   },
   {
     "id": "518110904",
@@ -1918,7 +1918,7 @@
     "precio": 32700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518110904.jpg"
+    "imagen": "assets/productos/518110904.jpg"
   },
   {
     "id": "518111404",
@@ -1928,7 +1928,7 @@
     "precio": 28200,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518111404.jpg"
+    "imagen": "assets/productos/518111404.jpg"
   },
   {
     "id": "518320204",
@@ -1938,7 +1938,7 @@
     "precio": 23700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518320204.jpg"
+    "imagen": "assets/productos/518320204.jpg"
   },
   {
     "id": "518320404",
@@ -1948,7 +1948,7 @@
     "precio": 24800,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518320404.jpg"
+    "imagen": "assets/productos/518320404.jpg"
   },
   {
     "id": "518320804",
@@ -1958,7 +1958,7 @@
     "precio": 23700,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518320804.jpg"
+    "imagen": "assets/productos/518320804.jpg"
   },
   {
     "id": "518320304",
@@ -1968,7 +1968,7 @@
     "precio": 13900,
     "categoria": "preparacion piel",
     "stock": "con stock",
-    "imagen": "518320304.jpg"
+    "imagen": "assets/productos/518320304.jpg"
   },
   {
     "id": "518081104",
@@ -1978,7 +1978,7 @@
     "precio": 22200,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518081104.jpg"
+    "imagen": "assets/productos/518081104.jpg"
   },
   {
     "id": "518081204",
@@ -1988,7 +1988,7 @@
     "precio": 22200,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518081204.jpg"
+    "imagen": "assets/productos/518081204.jpg"
   },
   {
     "id": "518080404",
@@ -1998,7 +1998,7 @@
     "precio": 25200,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518080404.jpg"
+    "imagen": "assets/productos/518080404.jpg"
   },
   {
     "id": "518080504",
@@ -2008,7 +2008,7 @@
     "precio": 25200,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518080504.jpg"
+    "imagen": "assets/productos/518080504.jpg"
   },
   {
     "id": "518230104",
@@ -2018,7 +2018,7 @@
     "precio": 21500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518230104.jpg"
+    "imagen": "assets/productos/518230104.jpg"
   },
   {
     "id": "518082004",
@@ -2028,7 +2028,7 @@
     "precio": 27600,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518082004.jpg"
+    "imagen": "assets/productos/518082004.jpg"
   },
   {
     "id": "518082104",
@@ -2038,7 +2038,7 @@
     "precio": 27600,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518082104.jpg"
+    "imagen": "assets/productos/518082104.jpg"
   },
   {
     "id": "518350304",
@@ -2048,7 +2048,7 @@
     "precio": 18100,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518350304.jpg"
+    "imagen": "assets/productos/518350304.jpg"
   },
   {
     "id": "518350404",
@@ -2058,7 +2058,7 @@
     "precio": 18100,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518350404.jpg"
+    "imagen": "assets/productos/518350404.jpg"
   },
   {
     "id": "518350504",
@@ -2068,7 +2068,7 @@
     "precio": 18100,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518350504.jpg"
+    "imagen": "assets/productos/518350504.jpg"
   },
   {
     "id": "518350604",
@@ -2078,7 +2078,7 @@
     "precio": 18100,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518350604.jpg"
+    "imagen": "assets/productos/518350604.jpg"
   },
   {
     "id": "518350704",
@@ -2088,7 +2088,7 @@
     "precio": 18100,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518350704.jpg"
+    "imagen": "assets/productos/518350704.jpg"
   },
   {
     "id": "518350804",
@@ -2098,7 +2098,7 @@
     "precio": 18100,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518350804.jpg"
+    "imagen": "assets/productos/518350804.jpg"
   },
   {
     "id": "518295104",
@@ -2108,7 +2108,7 @@
     "precio": 26300,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518295104.jpg"
+    "imagen": "assets/productos/518295104.jpg"
   },
   {
     "id": "518110304",
@@ -2118,7 +2118,7 @@
     "precio": 39500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518110304.jpg"
+    "imagen": "assets/productos/518110304.jpg"
   },
   {
     "id": "518111804",
@@ -2128,7 +2128,7 @@
     "precio": 21400,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518111804.jpg"
+    "imagen": "assets/productos/518111804.jpg"
   },
   {
     "id": "518111904",
@@ -2138,7 +2138,7 @@
     "precio": 21400,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518111904.jpg"
+    "imagen": "assets/productos/518111904.jpg"
   },
   {
     "id": "518112404",
@@ -2148,7 +2148,7 @@
     "precio": 36900,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518112404.jpg"
+    "imagen": "assets/productos/518112404.jpg"
   },
   {
     "id": "518112504",
@@ -2158,7 +2158,7 @@
     "precio": 36900,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518112504.jpg"
+    "imagen": "assets/productos/518112504.jpg"
   },
   {
     "id": "518112604",
@@ -2168,7 +2168,7 @@
     "precio": 36900,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518112604.jpg"
+    "imagen": "assets/productos/518112604.jpg"
   },
   {
     "id": "518112704",
@@ -2178,7 +2178,7 @@
     "precio": 36900,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518112704.jpg"
+    "imagen": "assets/productos/518112704.jpg"
   },
   {
     "id": "518112204",
@@ -2188,7 +2188,7 @@
     "precio": 36900,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518112204.jpg"
+    "imagen": "assets/productos/518112204.jpg"
   },
   {
     "id": "518295204",
@@ -2198,7 +2198,7 @@
     "precio": 28400,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518295204.jpg"
+    "imagen": "assets/productos/518295204.jpg"
   },
   {
     "id": "518981504",
@@ -2208,7 +2208,7 @@
     "precio": 25500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518981504.jpg"
+    "imagen": "assets/productos/518981504.jpg"
   },
   {
     "id": "518981904",
@@ -2218,7 +2218,7 @@
     "precio": 25500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518981904.jpg"
+    "imagen": "assets/productos/518981904.jpg"
   },
   {
     "id": "518982304",
@@ -2228,7 +2228,7 @@
     "precio": 25500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518982304.jpg"
+    "imagen": "assets/productos/518982304.jpg"
   },
   {
     "id": "518982604",
@@ -2238,7 +2238,7 @@
     "precio": 25500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518982604.jpg"
+    "imagen": "assets/productos/518982604.jpg"
   },
   {
     "id": "518982904",
@@ -2248,7 +2248,7 @@
     "precio": 25500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518982904.jpg"
+    "imagen": "assets/productos/518982904.jpg"
   },
   {
     "id": "518983004",
@@ -2258,7 +2258,7 @@
     "precio": 25500,
     "categoria": "correctores iluminadores rubores",
     "stock": "con stock",
-    "imagen": "518983004.jpg"
+    "imagen": "assets/productos/518983004.jpg"
   },
   {
     "id": "18250104",
@@ -2268,7 +2268,7 @@
     "precio": 23200,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "18250104.jpg"
+    "imagen": "assets/productos/18250104.jpg"
   },
   {
     "id": "18254004",
@@ -2278,7 +2278,7 @@
     "precio": 20700,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "18254004.jpg"
+    "imagen": "assets/productos/18254004.jpg"
   },
   {
     "id": "18160104",
@@ -2288,7 +2288,7 @@
     "precio": 18600,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "18160104.jpg"
+    "imagen": "assets/productos/18160104.jpg"
   },
   {
     "id": "518160304",
@@ -2298,7 +2298,7 @@
     "precio": 30000,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "518160304.jpg"
+    "imagen": "assets/productos/518160304.jpg"
   },
   {
     "id": "518165004",
@@ -2308,7 +2308,7 @@
     "precio": 19300,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "518165004.jpg"
+    "imagen": "assets/productos/518165004.jpg"
   },
   {
     "id": "518165504",
@@ -2318,7 +2318,7 @@
     "precio": 19300,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "518165504.jpg"
+    "imagen": "assets/productos/518165504.jpg"
   },
   {
     "id": "518045904",
@@ -2328,7 +2328,7 @@
     "precio": 28100,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "518045904.jpg"
+    "imagen": "assets/productos/518045904.jpg"
   },
   {
     "id": "518046004",
@@ -2338,7 +2338,7 @@
     "precio": 25900,
     "categoria": "delineadores",
     "stock": "con stock",
-    "imagen": "518046004.jpg"
+    "imagen": "assets/productos/518046004.jpg"
   },
   {
     "id": "518286504",
@@ -2348,7 +2348,7 @@
     "precio": 27500,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518286504.jpg"
+    "imagen": "assets/productos/518286504.jpg"
   },
   {
     "id": "518286604",
@@ -2358,7 +2358,7 @@
     "precio": 22500,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518286604.jpg"
+    "imagen": "assets/productos/518286604.jpg"
   },
   {
     "id": "518287304",
@@ -2368,7 +2368,7 @@
     "precio": 18000,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518287304.jpg"
+    "imagen": "assets/productos/518287304.jpg"
   },
   {
     "id": "518286704",
@@ -2378,7 +2378,7 @@
     "precio": 23100,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518286704.jpg"
+    "imagen": "assets/productos/518286704.jpg"
   },
   {
     "id": "518286804",
@@ -2388,7 +2388,7 @@
     "precio": 22500,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518286804.jpg"
+    "imagen": "assets/productos/518286804.jpg"
   },
   {
     "id": "518286904",
@@ -2398,7 +2398,7 @@
     "precio": 22500,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518286904.jpg"
+    "imagen": "assets/productos/518286904.jpg"
   },
   {
     "id": "518287004",
@@ -2408,7 +2408,7 @@
     "precio": 22500,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518287004.jpg"
+    "imagen": "assets/productos/518287004.jpg"
   },
   {
     "id": "518287104",
@@ -2418,7 +2418,7 @@
     "precio": 16500,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518287104.jpg"
+    "imagen": "assets/productos/518287104.jpg"
   },
   {
     "id": "518287204",
@@ -2428,7 +2428,7 @@
     "precio": 13200,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518287204.jpg"
+    "imagen": "assets/productos/518287204.jpg"
   },
   {
     "id": "518287404",
@@ -2438,7 +2438,7 @@
     "precio": 14200,
     "categoria": "pestanas y cejas",
     "stock": "con stock",
-    "imagen": "518287404.jpg"
+    "imagen": "assets/productos/518287404.jpg"
   },
   {
     "id": "518100104",
@@ -2448,7 +2448,7 @@
     "precio": 14900,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518100104.jpg"
+    "imagen": "assets/productos/518100104.jpg"
   },
   {
     "id": "518100204",
@@ -2458,7 +2458,7 @@
     "precio": 14900,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518100204.jpg"
+    "imagen": "assets/productos/518100204.jpg"
   },
   {
     "id": "518051304",
@@ -2468,7 +2468,7 @@
     "precio": 35600,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518051304.jpg"
+    "imagen": "assets/productos/518051304.jpg"
   },
   {
     "id": "518051404",
@@ -2478,7 +2478,7 @@
     "precio": 35600,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518051404.jpg"
+    "imagen": "assets/productos/518051404.jpg"
   },
   {
     "id": "518051504",
@@ -2488,7 +2488,7 @@
     "precio": 35600,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518051504.jpg"
+    "imagen": "assets/productos/518051504.jpg"
   },
   {
     "id": "518045104",
@@ -2498,7 +2498,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045104.jpg"
+    "imagen": "assets/productos/518045104.jpg"
   },
   {
     "id": "518045304",
@@ -2508,7 +2508,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045304.jpg"
+    "imagen": "assets/productos/518045304.jpg"
   },
   {
     "id": "518045404",
@@ -2518,7 +2518,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045404.jpg"
+    "imagen": "assets/productos/518045404.jpg"
   },
   {
     "id": "518045504",
@@ -2528,7 +2528,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045504.jpg"
+    "imagen": "assets/productos/518045504.jpg"
   },
   {
     "id": "518045604",
@@ -2538,7 +2538,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045604.jpg"
+    "imagen": "assets/productos/518045604.jpg"
   },
   {
     "id": "518045704",
@@ -2548,7 +2548,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045704.jpg"
+    "imagen": "assets/productos/518045704.jpg"
   },
   {
     "id": "518045804",
@@ -2558,7 +2558,7 @@
     "precio": 28100,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518045804.jpg"
+    "imagen": "assets/productos/518045804.jpg"
   },
   {
     "id": "518048004",
@@ -2568,7 +2568,7 @@
     "precio": 46200,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518048004.jpg"
+    "imagen": "assets/productos/518048004.jpg"
   },
   {
     "id": "518048104",
@@ -2578,7 +2578,7 @@
     "precio": 46200,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518048104.jpg"
+    "imagen": "assets/productos/518048104.jpg"
   },
   {
     "id": "518106004",
@@ -2588,7 +2588,7 @@
     "precio": 18400,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518106004.jpg"
+    "imagen": "assets/productos/518106004.jpg"
   },
   {
     "id": "518106104",
@@ -2598,7 +2598,7 @@
     "precio": 18400,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518106104.jpg"
+    "imagen": "assets/productos/518106104.jpg"
   },
   {
     "id": "518106204",
@@ -2608,7 +2608,7 @@
     "precio": 18400,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518106204.jpg"
+    "imagen": "assets/productos/518106204.jpg"
   },
   {
     "id": "518181504",
@@ -2618,7 +2618,7 @@
     "precio": 23000,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518181504.jpg"
+    "imagen": "assets/productos/518181504.jpg"
   },
   {
     "id": "518181604",
@@ -2628,7 +2628,7 @@
     "precio": 23000,
     "categoria": "sombras",
     "stock": "con stock",
-    "imagen": "518181604.jpg"
+    "imagen": "assets/productos/518181604.jpg"
   },
   {
     "id": "518219904",
@@ -2638,7 +2638,7 @@
     "precio": 23600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518219904.jpg"
+    "imagen": "assets/productos/518219904.jpg"
   },
   {
     "id": "518300104",
@@ -2648,7 +2648,7 @@
     "precio": 17100,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518300104.jpg"
+    "imagen": "assets/productos/518300104.jpg"
   },
   {
     "id": "18253004",
@@ -2658,7 +2658,7 @@
     "precio": 20000,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "18253004.jpg"
+    "imagen": "assets/productos/18253004.jpg"
   },
   {
     "id": "518215604",
@@ -2668,7 +2668,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518215604.jpg"
+    "imagen": "assets/productos/518215604.jpg"
   },
   {
     "id": "518226704",
@@ -2678,7 +2678,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518226704.jpg"
+    "imagen": "assets/productos/518226704.jpg"
   },
   {
     "id": "518226804",
@@ -2688,7 +2688,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518226804.jpg"
+    "imagen": "assets/productos/518226804.jpg"
   },
   {
     "id": "518227404",
@@ -2698,7 +2698,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227404.jpg"
+    "imagen": "assets/productos/518227404.jpg"
   },
   {
     "id": "518227504",
@@ -2708,7 +2708,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227504.jpg"
+    "imagen": "assets/productos/518227504.jpg"
   },
   {
     "id": "518227004",
@@ -2718,7 +2718,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227004.jpg"
+    "imagen": "assets/productos/518227004.jpg"
   },
   {
     "id": "518228304",
@@ -2728,7 +2728,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228304.jpg"
+    "imagen": "assets/productos/518228304.jpg"
   },
   {
     "id": "518228404",
@@ -2738,7 +2738,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228404.jpg"
+    "imagen": "assets/productos/518228404.jpg"
   },
   {
     "id": "518228504",
@@ -2748,7 +2748,7 @@
     "precio": 30800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228504.jpg"
+    "imagen": "assets/productos/518228504.jpg"
   },
   {
     "id": "518229004",
@@ -2758,7 +2758,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229004.jpg"
+    "imagen": "assets/productos/518229004.jpg"
   },
   {
     "id": "518229104",
@@ -2768,7 +2768,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229104.jpg"
+    "imagen": "assets/productos/518229104.jpg"
   },
   {
     "id": "518229204",
@@ -2778,7 +2778,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229204.jpg"
+    "imagen": "assets/productos/518229204.jpg"
   },
   {
     "id": "518229304",
@@ -2788,7 +2788,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229304.jpg"
+    "imagen": "assets/productos/518229304.jpg"
   },
   {
     "id": "518229404",
@@ -2798,7 +2798,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229404.jpg"
+    "imagen": "assets/productos/518229404.jpg"
   },
   {
     "id": "518229504",
@@ -2808,7 +2808,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229504.jpg"
+    "imagen": "assets/productos/518229504.jpg"
   },
   {
     "id": "518229604",
@@ -2818,7 +2818,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229604.jpg"
+    "imagen": "assets/productos/518229604.jpg"
   },
   {
     "id": "518229704",
@@ -2828,7 +2828,7 @@
     "precio": 33800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518229704.jpg"
+    "imagen": "assets/productos/518229704.jpg"
   },
   {
     "id": "518210304",
@@ -2838,7 +2838,7 @@
     "precio": 29600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518210304.jpg"
+    "imagen": "assets/productos/518210304.jpg"
   },
   {
     "id": "518210504",
@@ -2848,7 +2848,7 @@
     "precio": 29600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518210504.jpg"
+    "imagen": "assets/productos/518210504.jpg"
   },
   {
     "id": "518219704",
@@ -2858,7 +2858,7 @@
     "precio": 29600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518219704.jpg"
+    "imagen": "assets/productos/518219704.jpg"
   },
   {
     "id": "518223104",
@@ -2868,7 +2868,7 @@
     "precio": 29600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518223104.jpg"
+    "imagen": "assets/productos/518223104.jpg"
   },
   {
     "id": "518227704",
@@ -2878,7 +2878,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227704.jpg"
+    "imagen": "assets/productos/518227704.jpg"
   },
   {
     "id": "518227804",
@@ -2888,7 +2888,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227804.jpg"
+    "imagen": "assets/productos/518227804.jpg"
   },
   {
     "id": "518228004",
@@ -2898,7 +2898,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228004.jpg"
+    "imagen": "assets/productos/518228004.jpg"
   },
   {
     "id": "518228104",
@@ -2908,7 +2908,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228104.jpg"
+    "imagen": "assets/productos/518228104.jpg"
   },
   {
     "id": "518228204",
@@ -2918,7 +2918,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228204.jpg"
+    "imagen": "assets/productos/518228204.jpg"
   },
   {
     "id": "518228604",
@@ -2928,7 +2928,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228604.jpg"
+    "imagen": "assets/productos/518228604.jpg"
   },
   {
     "id": "518228704",
@@ -2938,7 +2938,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228704.jpg"
+    "imagen": "assets/productos/518228704.jpg"
   },
   {
     "id": "518228804",
@@ -2948,7 +2948,7 @@
     "precio": 21900,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228804.jpg"
+    "imagen": "assets/productos/518228804.jpg"
   },
   {
     "id": "518228904",
@@ -2958,7 +2958,7 @@
     "precio": 27300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518228904.jpg"
+    "imagen": "assets/productos/518228904.jpg"
   },
   {
     "id": "518226604",
@@ -2968,7 +2968,7 @@
     "precio": 23600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518226604.jpg"
+    "imagen": "assets/productos/518226604.jpg"
   },
   {
     "id": "518227104",
@@ -2978,7 +2978,7 @@
     "precio": 23600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227104.jpg"
+    "imagen": "assets/productos/518227104.jpg"
   },
   {
     "id": "518227204",
@@ -2988,7 +2988,7 @@
     "precio": 23600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518227204.jpg"
+    "imagen": "assets/productos/518227204.jpg"
   },
   {
     "id": "518336704",
@@ -2998,7 +2998,7 @@
     "precio": 31800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518336704.jpg"
+    "imagen": "assets/productos/518336704.jpg"
   },
   {
     "id": "518177104",
@@ -3008,7 +3008,7 @@
     "precio": 21300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518177104.jpg"
+    "imagen": "assets/productos/518177104.jpg"
   },
   {
     "id": "518177204",
@@ -3018,7 +3018,7 @@
     "precio": 21300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518177204.jpg"
+    "imagen": "assets/productos/518177204.jpg"
   },
   {
     "id": "518177304",
@@ -3028,7 +3028,7 @@
     "precio": 21300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518177304.jpg"
+    "imagen": "assets/productos/518177304.jpg"
   },
   {
     "id": "518177404",
@@ -3038,7 +3038,7 @@
     "precio": 21300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518177404.jpg"
+    "imagen": "assets/productos/518177404.jpg"
   },
   {
     "id": "518177504",
@@ -3048,7 +3048,7 @@
     "precio": 21300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518177504.jpg"
+    "imagen": "assets/productos/518177504.jpg"
   },
   {
     "id": "518177604",
@@ -3058,7 +3058,7 @@
     "precio": 21300,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518177604.jpg"
+    "imagen": "assets/productos/518177604.jpg"
   },
   {
     "id": "518172404",
@@ -3068,7 +3068,7 @@
     "precio": 38600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518172404.jpg"
+    "imagen": "assets/productos/518172404.jpg"
   },
   {
     "id": "518172404_cherry",
@@ -3078,7 +3078,7 @@
     "precio": 38600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518172404_cherry.jpg"
+    "imagen": "assets/productos/518172404_cherry.jpg"
   },
   {
     "id": "518336804",
@@ -3088,7 +3088,7 @@
     "precio": 25800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518336804.jpg"
+    "imagen": "assets/productos/518336804.jpg"
   },
   {
     "id": "518336904",
@@ -3098,7 +3098,7 @@
     "precio": 25800,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518336904.jpg"
+    "imagen": "assets/productos/518336904.jpg"
   },
   {
     "id": "518172004",
@@ -3108,7 +3108,7 @@
     "precio": 27600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518172004.jpg"
+    "imagen": "assets/productos/518172004.jpg"
   },
   {
     "id": "518172104",
@@ -3118,7 +3118,7 @@
     "precio": 27600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518172104.jpg"
+    "imagen": "assets/productos/518172104.jpg"
   },
   {
     "id": "518172204",
@@ -3128,7 +3128,7 @@
     "precio": 27600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518172204.jpg"
+    "imagen": "assets/productos/518172204.jpg"
   },
   {
     "id": "518172304",
@@ -3138,7 +3138,7 @@
     "precio": 27600,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518172304.jpg"
+    "imagen": "assets/productos/518172304.jpg"
   },
   {
     "id": "518337104",
@@ -3148,7 +3148,7 @@
     "precio": 23000,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518337104.jpg"
+    "imagen": "assets/productos/518337104.jpg"
   },
   {
     "id": "518337204",
@@ -3158,7 +3158,7 @@
     "precio": 23000,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518337204.jpg"
+    "imagen": "assets/productos/518337204.jpg"
   },
   {
     "id": "518337304",
@@ -3168,7 +3168,7 @@
     "precio": 23000,
     "categoria": "labios",
     "stock": "con stock",
-    "imagen": "518337304.jpg"
+    "imagen": "assets/productos/518337304.jpg"
   },
   {
     "id": "18135204",
@@ -3178,7 +3178,7 @@
     "precio": 15800,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135204.jpg"
+    "imagen": "assets/productos/18135204.jpg"
   },
   {
     "id": "18135304",
@@ -3188,7 +3188,7 @@
     "precio": 15800,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135304.jpg"
+    "imagen": "assets/productos/18135304.jpg"
   },
   {
     "id": "18135004",
@@ -3198,7 +3198,7 @@
     "precio": 15800,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135004.jpg"
+    "imagen": "assets/productos/18135004.jpg"
   },
   {
     "id": "18135904",
@@ -3208,7 +3208,7 @@
     "precio": 13900,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135904.jpg"
+    "imagen": "assets/productos/18135904.jpg"
   },
   {
     "id": "18134904",
@@ -3218,7 +3218,7 @@
     "precio": 19500,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18134904.jpg"
+    "imagen": "assets/productos/18134904.jpg"
   },
   {
     "id": "18139204",
@@ -3228,7 +3228,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18139204.jpg"
+    "imagen": "assets/productos/18139204.jpg"
   },
   {
     "id": "18137004",
@@ -3238,7 +3238,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18137004.jpg"
+    "imagen": "assets/productos/18137004.jpg"
   },
   {
     "id": "18137204",
@@ -3248,7 +3248,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18137204.jpg"
+    "imagen": "assets/productos/18137204.jpg"
   },
   {
     "id": "18137304",
@@ -3258,7 +3258,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18137304.jpg"
+    "imagen": "assets/productos/18137304.jpg"
   },
   {
     "id": "18128504",
@@ -3268,7 +3268,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18128504.jpg"
+    "imagen": "assets/productos/18128504.jpg"
   },
   {
     "id": "18128604",
@@ -3278,7 +3278,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18128604.jpg"
+    "imagen": "assets/productos/18128604.jpg"
   },
   {
     "id": "18127904",
@@ -3288,7 +3288,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18127904.jpg"
+    "imagen": "assets/productos/18127904.jpg"
   },
   {
     "id": "18128004",
@@ -3298,7 +3298,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18128004.jpg"
+    "imagen": "assets/productos/18128004.jpg"
   },
   {
     "id": "18128104",
@@ -3308,7 +3308,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18128104.jpg"
+    "imagen": "assets/productos/18128104.jpg"
   },
   {
     "id": "18128204",
@@ -3318,7 +3318,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18128204.jpg"
+    "imagen": "assets/productos/18128204.jpg"
   },
   {
     "id": "18127504",
@@ -3328,7 +3328,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18127504.jpg"
+    "imagen": "assets/productos/18127504.jpg"
   },
   {
     "id": "18127604",
@@ -3338,7 +3338,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18127604.jpg"
+    "imagen": "assets/productos/18127604.jpg"
   },
   {
     "id": "18127704",
@@ -3348,7 +3348,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18127704.jpg"
+    "imagen": "assets/productos/18127704.jpg"
   },
   {
     "id": "18127804",
@@ -3358,7 +3358,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18127804.jpg"
+    "imagen": "assets/productos/18127804.jpg"
   },
   {
     "id": "18126604",
@@ -3368,7 +3368,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126604.jpg"
+    "imagen": "assets/productos/18126604.jpg"
   },
   {
     "id": "18126704",
@@ -3378,7 +3378,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126704.jpg"
+    "imagen": "assets/productos/18126704.jpg"
   },
   {
     "id": "18126804",
@@ -3388,7 +3388,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126804.jpg"
+    "imagen": "assets/productos/18126804.jpg"
   },
   {
     "id": "18126904",
@@ -3398,7 +3398,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126904.jpg"
+    "imagen": "assets/productos/18126904.jpg"
   },
   {
     "id": "18126204",
@@ -3408,7 +3408,7 @@
     "precio": 13000,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126204.jpg"
+    "imagen": "assets/productos/18126204.jpg"
   },
   {
     "id": "18126304",
@@ -3418,7 +3418,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126304.jpg"
+    "imagen": "assets/productos/18126304.jpg"
   },
   {
     "id": "18126404",
@@ -3428,7 +3428,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126404.jpg"
+    "imagen": "assets/productos/18126404.jpg"
   },
   {
     "id": "18126504",
@@ -3438,7 +3438,7 @@
     "precio": 16300,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126504.jpg"
+    "imagen": "assets/productos/18126504.jpg"
   },
   {
     "id": "18125804",
@@ -3448,7 +3448,7 @@
     "precio": 22700,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18125804.jpg"
+    "imagen": "assets/productos/18125804.jpg"
   },
   {
     "id": "18125904",
@@ -3458,7 +3458,7 @@
     "precio": 22700,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18125904.jpg"
+    "imagen": "assets/productos/18125904.jpg"
   },
   {
     "id": "18126004",
@@ -3468,7 +3468,7 @@
     "precio": 22700,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126004.jpg"
+    "imagen": "assets/productos/18126004.jpg"
   },
   {
     "id": "18126104",
@@ -3478,7 +3478,7 @@
     "precio": 22700,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18126104.jpg"
+    "imagen": "assets/productos/18126104.jpg"
   },
   {
     "id": "18135404",
@@ -3488,7 +3488,7 @@
     "precio": 15200,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135404.jpg"
+    "imagen": "assets/productos/18135404.jpg"
   },
   {
     "id": "18136204",
@@ -3498,7 +3498,7 @@
     "precio": 19500,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18136204.jpg"
+    "imagen": "assets/productos/18136204.jpg"
   },
   {
     "id": "18136004",
@@ -3508,7 +3508,7 @@
     "precio": 12700,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18136004.jpg"
+    "imagen": "assets/productos/18136004.jpg"
   },
   {
     "id": "18135804",
@@ -3518,7 +3518,7 @@
     "precio": 15200,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135804.jpg"
+    "imagen": "assets/productos/18135804.jpg"
   },
   {
     "id": "18135704",
@@ -3528,7 +3528,7 @@
     "precio": 11500,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18135704.jpg"
+    "imagen": "assets/productos/18135704.jpg"
   },
   {
     "id": "18139804",
@@ -3538,7 +3538,7 @@
     "precio": 5000,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18139804.jpg"
+    "imagen": "assets/productos/18139804.jpg"
   },
   {
     "id": "18139904",
@@ -3548,7 +3548,7 @@
     "precio": 3800,
     "categoria": "unas",
     "stock": "con stock",
-    "imagen": "18139904.jpg"
+    "imagen": "assets/productos/18139904.jpg"
   },
   {
     "id": "512060004",
@@ -3558,7 +3558,7 @@
     "precio": 14900,
     "categoria": "aceites esenciales",
     "stock": "con stock",
-    "imagen": "512060004.jpg"
+    "imagen": "assets/productos/512060004.jpg"
   },
   {
     "id": "512070004",
@@ -3568,6 +3568,6 @@
     "precio": 14900,
     "categoria": "aceites esenciales",
     "stock": "con stock",
-    "imagen": "512070004.jpg"
+    "imagen": "assets/productos/512070004.jpg"
   }
 ]
