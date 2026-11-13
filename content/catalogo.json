@@ -3569,15 +3569,5 @@
     "categoria": "aceites esenciales",
     "stock": "con stock",
     "imagen": "assets/productos/512070004.jpg"
-  },
-  {
-    "id": "0017",
-    "nombre": "Prueba",
-    "categoria": "Prueba",
-    "medida": "",
-    "precio": 737,
-    "stock": "con stock",
-    "descripcion": "",
-    "imagen": "/assets/productos/17060004.jpg"
   }
 ]
