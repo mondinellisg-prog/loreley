@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Loreley | Cosmética Digital</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#291800",
+                        "surface-tint": "#755933",
+                        "inverse-on-surface": "#f1f1ee",
+                        "inverse-surface": "#2f312f",
+                        "outline": "#80756a",
+                        "on-primary-fixed-variant": "#5b421e",
+                        "on-tertiary-fixed-variant": "#494645",
+                        "tertiary-container": "#b3afad",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "background": "#faf9f6",
+                        "surface-variant": "#e3e2e0",
+                        "on-secondary-fixed-variant": "#484643",
+                        "on-surface": "#1a1c1a",
+                        "primary-container": "#cdaa7d",
+                        "on-background": "#1a1c1a",
+                        "on-tertiary-container": "#454241",
+                        "surface": "#faf9f6",
+                        "surface-dim": "#dbdad7",
+                        "surface-container-low": "#f4f3f1",
+                        "secondary": "#605e5a",
+                        "on-surface-variant": "#4e453b",
+                        "surface-container": "#efeeeb",
+                        "secondary-container": "#e6e2dd",
+                        "surface-container-high": "#e9e8e5",
+                        "on-tertiary-fixed": "#1d1b1a",
+                        "surface-bright": "#faf9f6",
+                        "tertiary": "#615e5c",
+                        "primary": "#755933",
+                        "outline-variant": "#d1c4b7",
+                        "inverse-primary": "#e5c092",
+                        "secondary-fixed": "#e6e2dd",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#e7e1df",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e3e2e0",
+                        "primary-fixed": "#ffddb4",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#666460",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#cac6c1",
+                        "tertiary-fixed-dim": "#cac5c4",
+                        "on-primary-container": "#573e1a",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#1d1b19",
+                        "primary-fixed-dim": "#e5c092"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        html { scroll-behavior: smooth; }
+
+        /* Loader Animation */
+        #loader {
+            position: fixed; inset: 0; background: #faf9f6; z-index: 1000;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+        .spinner {
+            width: 40px; height: 40px; border: 3px solid #755933;
+            border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Scroll horizontal invisible pero funcional */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d1c4b7; border-radius: 10px; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30">
+
+    <!-- Pantalla de Carga -->
+    <div id="loader">
+        <div class="spinner mb-4"></div>
+        <p class="font-headline italic text-primary tracking-[0.2em] uppercase text-xs">Conectando con el Catálogo...</p>
+    </div>
+
+    <!-- TopAppBar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-stone-50/80 backdrop-blur-xl transition-transform duration-500 ease-out border-b border-outline-variant/20">
+        <div class="flex justify-between items-center w-full px-6 md:px-8 py-4 md:py-6 max-w-screen-2xl mx-auto">
+            <div class="flex items-center gap-12">
+                <a class="text-2xl font-bold tracking-[-0.05em] text-[#755933] font-headline uppercase" href="#">LORELEY</a>
+                <nav class="hidden md:flex gap-8 items-center">
+                    <a class="font-headline tracking-tighter uppercase font-bold text-[#755933] border-b border-[#755933]/20 pb-1 text-sm" href="#inicio">Shop</a>
+                    <a class="font-headline tracking-tighter uppercase font-bold text-stone-500 hover:text-stone-900 transition-colors text-sm" href="#catalogo">Catálogo</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <button onclick="toggleCart()" class="text-stone-500 hover:opacity-70 transition-opacity relative group" aria-label="Abrir bolsa de compras">
+                    <span class="material-symbols-outlined text-[28px]" data-icon="shopping_bag">shopping_bag</span>
+                    <span id="cart-count" class="absolute -top-1 -right-2 w-5 h-5 bg-primary text-on-primary text-[10px] font-bold rounded-full flex items-center justify-center transform transition-transform group-hover:scale-110 shadow-sm border border-white">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-[72px] md:pt-[88px]">
+        <!-- Hero Section: The Sculpted Void -->
+        <section id="inicio" class="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-surface-container-low px-8">
+            <div class="absolute inset-0 opacity-40">
+                <img alt="Close up of smooth clay texture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-snABIDJOFFKXh883eoe1_d6tbu77QA-qE2rSPD19oH3PUEJugA7MrZWqDtmScJMXGXYPPe9em7NmL5HhhdErRuE08bEdnnfMkOMEZQKT79_nVdiwUrjhNrk4zytJVsdoVhAdVcnWA_Oo57EsWJY_qiFrMK4O9kwINvyhcIRGBeMN7bR81lpsQvrWodW02v8gDvDmA8hoBtPErqrwYghcEXVWjb75zvyj7qIemAHxuG5ilMndtk_Vc_s6h0fL6oXctsluMldCLJ4"/>
+            </div>
+            <div class="relative z-10 text-center max-w-4xl">
+                <span class="font-label text-xs tracking-[0.4em] uppercase text-primary mb-6 block">LORELEY COSMÉTICOS</span>
+                <h1 class="font-headline text-5xl md:text-8xl lg:text-9xl font-black tracking-tighter text-on-surface uppercase leading-[0.85]">
+                    COLECCIÓN <br/> <span class="text-primary italic font-light lowercase">exclusiva</span>
+                </h1>
+                <p class="mt-8 text-on-surface-variant max-w-xl mx-auto text-base md:text-lg leading-relaxed font-light">
+                    Una curaduría de fórmulas esenciales diseñadas para esculpir y nutrir la piel a través del minimalismo científico.
+                </p>
+            </div>
+        </section>
+
+        <!-- Minimalist Filter Bar -->
+        <section id="catalogo" class="sticky top-[72px] md:top-[88px] z-40 bg-background/95 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+            <div class="max-w-screen-2xl mx-auto px-6 py-4 overflow-x-auto hide-scroll">
+                <div class="flex items-center gap-8 whitespace-nowrap px-2" id="category-list">
+                    <button class="font-label text-xs tracking-widest uppercase text-primary font-bold border-b-2 border-primary pb-1 filter-btn shrink-0 transition-colors" onclick="filterProducts('todos', this)">Todos</button>
+                    <!-- Inyectadas por JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid: Sculpted Layout Dinámico -->
+        <section class="max-w-screen-2xl mx-auto px-6 md:px-8 py-20 min-h-[50vh]">
+            <div id="product-grid" class="flex overflow-x-auto hide-scroll snap-x snap-mandatory gap-8 px-4 pb-12">
+                <!-- Se inyecta con JS desde content/catalogo.json -->
+            </div>
+        </section>
+
+        <!-- Newsletter / Editorial CTA -->
+        <section class="bg-surface-container-highest py-32 px-6 text-center">
+            <div class="max-w-2xl mx-auto">
+                <span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="auto_awesome">auto_awesome</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tighter uppercase mb-6">Diario de la piel</h2>
+                <p class="text-on-surface-variant font-light mb-12 leading-relaxed">Únete a nuestra lista exclusiva para recibir consejos de cuidado editorial y acceso anticipado a lanzamientos limitados.</p>
+                <form class="flex flex-col md:flex-row gap-4" onsubmit="event.preventDefault();">
+                    <input class="flex-1 bg-surface-container-lowest border-none rounded-full px-8 py-4 text-sm tracking-widest focus:ring-1 focus:ring-primary/50 placeholder:text-stone-400 outline-none" placeholder="TU CORREO ELECTRÓNICO" type="email"/>
+                    <button type="button" class="bg-on-surface text-background px-10 py-4 rounded-full text-xs tracking-widest uppercase font-bold hover:bg-primary transition-colors">Suscribirme</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#F4F3F1] relative full-width py-20 px-8 lg:px-12 overflow-hidden">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 max-w-screen-2xl mx-auto z-10 relative">
+            <div class="space-y-8 max-w-md">
+                <h4 class="font-headline text-3xl font-black text-primary tracking-tighter uppercase">LORELEY</h4>
+                <p class="text-stone-500 font-light leading-relaxed">Dedicados a la pureza del diseño y la efectividad científica en el cuidado de la piel. Cada fórmula es una pieza de escultura líquida.</p>
+                
+                <div class="flex items-center gap-2 text-stone-500 text-sm mt-4">
+                    <span class="material-symbols-outlined text-[18px]">support_agent</span>
+                    <span>Atención a clientes: 11 3629-3941</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8">
+                <div class="flex flex-col gap-4">
+                    <span class="font-label text-xs tracking-widest uppercase font-bold text-on-surface">Colecciones</span>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#catalogo">Cuidados Básicos</a>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#catalogo">Antiage</a>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#catalogo">Sensorial</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="font-label text-xs tracking-widest uppercase font-bold text-on-surface">Nosotros</span>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#">Nuestra Historia</a>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#">Términos y Condiciones</a>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#">Envíos</a>
+                </div>
+                <div class="flex flex-col gap-4 col-span-2 md:col-span-1">
+                    <span class="font-label text-xs tracking-widest uppercase font-bold text-on-surface">Conectar</span>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#">Instagram</a>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="#">Facebook</a>
+                    <a class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-[#755933] transition-colors" href="https://wa.me/5491136293941" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-24 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4 max-w-screen-2xl mx-auto z-10 relative">
+            <span class="font-label text-[10px] tracking-[0.3em] uppercase text-stone-400 text-center md:text-left">© 2026 LORELEY - WEB OFICIAL.</span>
+            <div class="flex gap-8">
+                <span class="material-symbols-outlined text-stone-300 text-lg" data-icon="language">language</span>
+                <span class="material-symbols-outlined text-stone-300 text-lg" data-icon="verified_user">verified_user</span>
+            </div>
+        </div>
+        
+        <div class="font-['Epilogue'] text-6xl md:text-9xl opacity-5 font-black absolute bottom-[-10px] right-0 pointer-events-none p-4 md:p-8 w-full text-right leading-none">LORELEY</div>
+    </footer>
+
+    <!-- CARRITO LATERAL (DRAWER) -->
+    <div id="cart-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleCart()"></div>
+    
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-surface shadow-2xl z-[70] transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col border-l border-outline-variant/20">
+        
+        <div class="px-8 py-6 flex justify-between items-center border-b border-outline-variant/20 bg-surface-container-lowest">
+            <h3 class="font-headline text-2xl font-bold tracking-tight text-on-surface uppercase flex items-center gap-3">
+                Tu Bolsa <span id="drawer-count" class="text-xs bg-primary text-on-primary px-3 py-1 rounded-full font-body">0</span>
+            </h3>
+            <button onclick="toggleCart()" class="text-on-surface-variant hover:text-on-surface transition-colors rounded-full hover:bg-surface-container p-2 flex items-center justify-center" aria-label="Cerrar bolsa">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div id="cart-items" class="flex-grow overflow-y-auto p-6 md:p-8 space-y-4 bg-surface">
+            <!-- Items generados por JS -->
+        </div>
+
+        <div class="p-6 md:p-8 bg-surface-container-lowest border-t border-outline-variant/20 shadow-[0_-10px_40px_rgba(0,0,0,0.03)] z-10">
+            <div class="mb-6">
+                <label class="block font-label text-[10px] font-bold mb-3 uppercase tracking-widest text-on-surface-variant">Método de Pago</label>
+                <select id="payment-method" class="w-full p-4 border border-outline-variant/40 text-sm focus:border-primary focus:ring-1 outline-none bg-surface font-body text-on-surface rounded-lg transition-all">
+                    <option value="Transferencia">📱 Mercado Pago / Billetera Virtual</option>
+                    <option value="Tarjeta de Crédito">💳 Tarjeta de Crédito</option>
+                    <option value="Efectivo">💵 Efectivo (al retirar)</option>
+                </select>
+            </div>
+            
+            <div class="flex justify-between items-end mb-8">
+                <span class="font-label text-sm uppercase tracking-widest text-on-surface-variant font-bold">Total</span>
+                <span id="cart-total" class="font-headline text-4xl font-light text-primary">$0.00</span>
+            </div>
+            
+            <button onclick="checkoutWhatsApp()" class="w-full bg-[#25D366] text-white py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-[#128C7E] transition-all duration-300 uppercase tracking-widest text-xs font-bold shadow-lg shadow-[#25D366]/20 group">
+                <span class="material-symbols-outlined group-hover:scale-110 transition-transform">send</span>
+                Enviar Pedido
+            </button>
+        </div>
+    </div>
+
+    <!-- LÓGICA JAVASCRIPT ADAPTADA A JSON LOCAL -->
+    <script>
+        // ARCHIVO JSON LOCAL GENERADO Y GESTIONADO POR SVELTIA CMS
+        const CATALOG_JSON_URL = './content/catalogo.json';
+
+        // LISTA EXACTA DE TUS 24 CATEGORÍAS
+        const categoryList = [
+            "cuidados basicos",
+            "dermatocosmetica dr. enero",
+            "pieles delicadas",
+            "antiage",
+            "hidratacion humectacion tonificacion",
+            "pieles grasas",
+            "manos y pies",
+            "cuidados masculinos",
+            "cuidados capilares",
+            "laca beauty",
+            "corporales",
+            "renovacion celular",
+            "teens",
+            "fragancias",
+            "sensorial",
+            "proteccion solar",
+            "preparacion piel",
+            "correctores iluminadores rubores",
+            "delineadores",
+            "pestanas y cejas",
+            "sombras",
+            "labios",
+            "unas",
+            "aceites esenciales"
+        ];
+
+        let allProducts = [];
+        let cart = [];
+
+        // SANITIZACIÓN ANTI-XSS
+        function escapeHTML(str) {
+            if (!str) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        // LIMPIEZA DE PRECIO
+        function cleanPrice(priceVal) {
+            if (typeof priceVal === 'number') return priceVal;
+            if (!priceVal) return 0;
+            let s = priceVal.toString().trim();
+            s = s.replace(/\$/g, '').replace(/\s/g, '');
+            if (s.includes('.') && s.split('.').pop().length === 3) {
+                s = s.replace(/\./g, '');
+            }
+            s = s.replace(',', '.');
+            return parseFloat(s) || 0;
+        }
+
+        // NORMALIZAR TEXTOS
+        function normalizeText(text) {
+            if (!text) return "";
+            return text.toString().trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        async function fetchProducts() {
+            try {
+                // cache: 'no-cache' asegura que al actualizar stock/precios desde el CMS se vean al instante
+                const response = await fetch(CATALOG_JSON_URL, { cache: 'no-cache' });
+                if (!response.ok) throw new Error('Error al obtener catalogo.json');
+                
+                const data = await response.json();
+                const rawList = Array.isArray(data) ? data : (data.productos || []);
+
+                allProducts = rawList.map(item => {
+                    // Compatibilidad tanto con el campo "medida" del JSON como "ml_g"
+                    const rawMedida = item.medida || item.ml_g || '';
+                    const medidaFormateada = rawMedida 
+                        ? (rawMedida.toString().toLowerCase().includes('ml') || rawMedida.toString().toLowerCase().includes('g') ? rawMedida : `${rawMedida} ml/g`)
+                        : '';
+
+                    return {
+                        id: String(item.id || ''),
+                        nombre: item.nombre || '',
+                        medida: medidaFormateada,
+                        descripcion: item.descripcion || '',
+                        precio: cleanPrice(item.precio),
+                        categoria: normalizeText(item.categoria),
+                        stock: item.stock ? normalizeText(item.stock) : 'con stock',
+                        imagen: item.imagen || `${item.id}.jpg`
+                    };
+                }).filter(p => p.nombre !== '');
+
+                initCategoryBar();
+                renderProducts(allProducts);
+                
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(() => document.getElementById('loader').style.display = 'none', 500);
+
+            } catch (error) {
+                console.error("Error cargando productos:", error);
+                document.getElementById('loader').style.display = 'none';
+                alert("Hubo un error cargando el catálogo. Refresca la página.");
+            }
+        }
+
+        function initCategoryBar() {
+            const bar = document.getElementById('category-list');
+            categoryList.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = "font-label text-xs tracking-widest uppercase text-stone-400 hover:text-on-surface transition-colors filter-btn shrink-0 pb-1 border-b-2 border-transparent";
+                btn.innerText = cat;
+                btn.onclick = () => filterProducts(cat, btn);
+                bar.appendChild(btn);
+            });
+        }
+
+        function renderProducts(items) {
+            const grid = document.getElementById('product-grid');
+
+            if (items.length === 0) {
+                grid.innerHTML = `<div class="w-full py-16 text-center text-stone-400 font-headline uppercase tracking-widest text-sm">No hay productos disponibles en esta categoría.</div>`;
+                return;
+            }
+            
+            grid.innerHTML = items.map(p => {
+                const isOut = p.stock === 'sin stock' || p.stock === 'agotado';
+                const safeId = escapeHTML(p.id);
+                const safeNombre = escapeHTML(p.nombre);
+                const safeImagen = escapeHTML(p.imagen);
+                const safeMedida = escapeHTML(p.medida);
+                
+                return `
+                <div class="group cursor-pointer flex flex-col relative shrink-0 w-[280px] md:w-[350px] snap-start ${!isOut ? 'hover:scale-[1.02] transition-transform duration-300' : ''}">
+                    <div class="relative aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-xl">
+                        ${isOut ? `<div class="absolute top-4 left-4 bg-inverse-surface text-inverse-on-surface text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full z-10 shadow-lg">Agotado</div>` : ''}
+                        
+                        <img src="${safeImagen}" alt="${safeNombre}" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500?text=Sin+Imagen';" class="w-full h-full object-contain p-4 transition-transform duration-1000 ${isOut ? 'opacity-40 grayscale' : 'group-hover:scale-105'}">
+                        
+                        ${!isOut ? `
+                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-8">
+                            <button onclick="addToCart('${safeId}')" class="bg-surface text-on-surface px-8 py-3 rounded-full text-xs tracking-widest uppercase font-bold shadow-2xl hover:bg-primary hover:text-on-primary transition-all transform translate-y-4 group-hover:translate-y-0">Agregar a Bolsa</button>
+                        </div>
+                        ` : `
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="bg-surface/90 text-on-surface-variant px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm">No Disponible</span>
+                        </div>
+                        `}
+                    </div>
+                    
+                    <div class="mt-6 flex flex-col flex-grow text-center">
+                        <h3 class="font-headline text-lg font-bold tracking-tight text-on-surface uppercase leading-snug">${safeNombre}</h3>
+                        <div class="flex flex-col items-center justify-end mt-2 flex-grow gap-2">
+                            <p class="text-on-surface-variant text-[11px] font-bold tracking-widest uppercase">${safeMedida}</p>
+                            <span class="text-primary font-headline text-2xl font-light">$${p.precio.toLocaleString('es-AR')}</span>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            grid.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+
+        function filterProducts(cat, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.className = "font-label text-xs tracking-widest uppercase text-stone-400 hover:text-on-surface transition-colors filter-btn shrink-0 pb-1 border-b-2 border-transparent";
+            });
+            btn.className = "font-label text-xs tracking-widest uppercase text-primary font-bold border-b-2 border-primary pb-1 filter-btn shrink-0 transition-colors";
+
+            if (cat === 'todos') {
+                renderProducts(allProducts);
+            } else {
+                const targetCat = normalizeText(cat);
+                const filtered = allProducts.filter(p => p.categoria === targetCat);
+                renderProducts(filtered);
+            }
+        }
+
+        // ==========================================
+        // LÓGICA DEL CARRITO
+        // ==========================================
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-overlay');
+            drawer.classList.toggle('translate-x-full');
+            overlay.classList.toggle('opacity-0');
+            overlay.classList.toggle('pointer-events-none');
+            
+            if (!drawer.classList.contains('translate-x-full')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        function addToCart(id) {
+            const item = allProducts.find(p => p.id == id);
+            if (item && item.stock !== 'sin stock' && item.stock !== 'agotado') {
+                cart.push(item);
+                updateCart();
+                if (document.getElementById('cart-drawer').classList.contains('translate-x-full')) {
+                    toggleCart();
+                }
+            }
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            document.getElementById('cart-count').innerText = cart.length;
+            document.getElementById('drawer-count').innerText = cart.length;
+            
+            const badge = document.getElementById('cart-count');
+            badge.classList.add('scale-150');
+            setTimeout(() => badge.classList.remove('scale-150'), 200);
+
+            const itemsContainer = document.getElementById('cart-items');
+            const totalSpan = document.getElementById('cart-total');
+            
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = `
+                    <div class="h-full flex flex-col items-center justify-center text-on-surface-variant space-y-4 opacity-60">
+                        <span class="material-symbols-outlined text-6xl opacity-50">shopping_bag</span>
+                        <p class="font-headline tracking-tighter text-lg uppercase font-light">Tu bolsa está vacía</p>
+                    </div>`;
+                totalSpan.innerText = '$0.00';
+                return;
+            }
+
+            let total = 0;
+            itemsContainer.innerHTML = cart.map((item, index) => {
+                total += item.precio;
+                return `
+                    <div class="flex gap-6 p-4 bg-surface-container-lowest border border-outline-variant/20 rounded-xl shadow-sm relative group items-center">
+                        <div class="w-20 h-24 bg-surface-container rounded-lg overflow-hidden shrink-0">
+                            <img src="${escapeHTML(item.imagen)}" alt="${escapeHTML(item.nombre)}" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow flex flex-col justify-center">
+                            <p class="font-headline text-sm font-bold text-on-surface uppercase leading-tight pr-6">${escapeHTML(item.nombre)}</p>
+                            <p class="text-primary font-headline text-lg font-light mt-1">$${item.precio.toLocaleString('es-AR')}</p>
+                            <button onclick="removeFromCart(${index})" class="flex items-center gap-1 font-label text-[10px] uppercase tracking-wider font-bold text-stone-400 hover:text-error transition-colors mt-3 w-fit">
+                                <span class="material-symbols-outlined text-[14px]">delete</span>
+                                Quitar
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            totalSpan.innerText = `$${total.toLocaleString('es-AR')}`;
+        }
+
+        // ==========================================
+        // ENVÍO DE PEDIDO A WHATSAPP
+        // ==========================================
+        function checkoutWhatsApp() {
+            if (cart.length === 0) return alert("Tu bolsa está vacía. Agrega productos para continuar.");
+            
+            const method = document.getElementById('payment-method').value;
+            
+            let msg = "✨ *¡Hola LORELEY!* ✨\nQuisiera realizar el siguiente pedido:\n\n";
+            cart.forEach(item => {
+                msg += `🔸 ${item.nombre} - $${item.precio.toLocaleString('es-AR')}\n`;
+            });
+            
+            msg += `\n💵 *Total a pagar:* ${document.getElementById('cart-total').innerText}`;
+            msg += `\n💳 *Método de pago:* ${method}`;
+            msg += `\n\n_Pedido generado desde el catálogo digital._`;
+
+            const whatsappUrl = `https://wa.me/5491136293941?text=${encodeURIComponent(msg)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Iniciar
+        fetchProducts();
+    </script>
+</body>
+</html>
