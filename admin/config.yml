@@ -1,16 +1,13 @@
 backend:
   name: github
-  repo: tu-usuario/loreley
+  repo: mondinellisg-prog/loreley
   branch: main
 
-# Manejo de multimedia
+# Carpeta para nuevas fotos que subas desde el panel
 media_folder: "/"
 public_folder: "/"
 
-# Interfaz visual
-locale: "es"
-display_url: "https://loreleycosmeticos.pages.dev"
-logo_url: "https://loreleycosmeticos.pages.dev/assets/logo.png"
+display_url: "https://loreley.pages.dev"
 
 collections:
   - name: "catalogo_general"
