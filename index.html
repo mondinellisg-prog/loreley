@@ -506,21 +506,26 @@
             totalSpan.innerText = `$${total.toLocaleString('es-AR')}`;
         }
 
-        function checkoutWhatsApp() {
+ function checkoutWhatsApp() {
     if (cart.length === 0) return alert("Tu bolsa está vacía. Agrega productos para continuar.");
 
     const method = document.getElementById('payment-method').value;
 
-    let msg = "✦ *¡Hola LORELEY!* ✦\nQuisiera realizar el siguiente pedido:\n\n";
+    let msg = "\u2728 *¡Hola LORELEY!* \u2728\nQuisiera realizar el siguiente pedido:\n\n";
     cart.forEach(item => {
-        msg += `▪ ${item.nombre} - $${item.precio.toLocaleString('es-AR')}\n`;
+        msg += `\uD83D\uDD38 ${item.nombre} - $${item.precio.toLocaleString('es-AR')}\n`;
     });
 
-    msg += `\n*Total a pagar:* ${document.getElementById('cart-total').innerText}`;
-    msg += `\n*Método de pago:* ${method}`;
+    msg += `\n\uD83D\uDCB5 *Total a pagar:* ${document.getElementById('cart-total').innerText}`;
+    msg += `\n\uD83D\uDCB3 *Método de pago:* ${method}`;
     msg += `\n\n_Pedido generado desde el catálogo digital._`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=5491157684431&text=${encodeURIComponent(msg)}`;
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const baseUrl = isMobile
+        ? 'https://api.whatsapp.com/send'
+        : 'https://web.whatsapp.com/send';
+
+    const whatsappUrl = `${baseUrl}?phone=5491157684431&text=${encodeURIComponent(msg)}`;
     window.open(whatsappUrl, '_blank');
 }
 
